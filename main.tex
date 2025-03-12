@@ -7,6 +7,70 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{listings}
+
+% Custom section formatting for IEEEtran
+\makeatletter
+% Use Roman numerals for sections
+\renewcommand\thesection{\Roman{section}}
+% Format sections with Roman numerals and add period
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+                       {-3.5ex \@plus -1ex \@minus -.2ex}%
+                       {2.3ex \@plus.2ex}%
+                       {\normalfont\Large\bfseries\Roman{section}.\quad}}
+% Keep subsections unnumbered with no dot
+\renewcommand\thesubsection{}
+% Redefine subsection to avoid using any numbering
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                       {-3.25ex\@plus -1ex \@minus -.2ex}%
+                       {1.5ex \@plus .2ex}%
+                       {\normalfont\large\bfseries}}
+% Empty section format to prevent automatic numbering
+\renewcommand\@seccntformat[1]{}
+\makeatother
+
+% Configure listings package with enhanced JSON styling
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{gray!10},
+    commentstyle=\color{green!50!black},
+    keywordstyle=\color{blue},
+    stringstyle=\color{purple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=none,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+% Custom JSON styling
+\lstdefinelanguage{JSON}{
+    morestring=[b]",
+    stringstyle=\color{purple},
+    showstringspaces=false,
+    keywords={false,true,null},
+    keywordstyle=\color{orange},
+    morekeywords={[2]"task_id","task","plan","actions","step","controlLabel","controlText","function","args","file_path"},
+    keywordstyle={[2]\color{blue}},
+    sensitive=false,
+    comment=[l]{//},
+    commentstyle=\color{green!50!black},
+    morecomment=[s]{/*}{*/},
+    literate=
+        {:}{{{\color{black}{:}}}}{1}
+        {,}{{{\color{black}{,}}}}{1}
+        {\{}{{{\color{black}{\{}}}}{1}
+        {\}}{{{\color{black}{\}}}}}{1}
+        {[}{{{\color{black}{[}}}}{1}
+        {]}{{{\color{black}{]}}}}{1}
+}
+
+\lstset{style=mystyle}
 
 \begin{document}
 
@@ -63,16 +127,100 @@ According to Wang et al., LAMs are distinguished by several advanced capabilitie
 \end{itemize}
 
 \subsection{Development Pipeline for LAMs}
-Creating effective LAMs involves a systematic development process outlined by Wang et al.:
+Creating effective LAMs involves a systematic development process outlined by Wang et al. \cite{wang2023lam}. To understand the process of transforming a LLM into a LAM it is neccesary that we spend some time understanding the training process:
 
-\begin{enumerate}
-    \item \textbf{Data Collection and Preparation:} Gathering and curating task-specific data, including user queries, environmental contexts, and corresponding actions.
-    \item \textbf{Model Training:} Using specialized techniques such as supervised fine-tuning and reinforcement learning to train the LAM for action generation.
-    \item \textbf{Integration and Grounding:} Embedding the LAM within an agent framework equipped with tools, memory, and environmental interfaces.
-    \item \textbf{Rigorous Evaluation:} Testing the LAM's performance in both offline controlled environments and real-world online scenarios.
-\end{enumerate}
+\textbf{Data Collection and Preparation:} Gathering and curating task-specific data, including user queries, environmental contexts, and corresponding actions. This initial phase involves a two-phase approach:
+\begin{itemize}
+    \item \textit{Task-Plan Data Collection:} Collecting data consisting of user requests and corresponding step-by-step plans, sourced from documentation, websites like WikiHow, and search queries.
+    \item \textit{Task-Action Data Collection:} Converting task-plan data into executable task-action data, where each plan step is transformed into concrete actions that can be directly executed in the target environment.
+\end{itemize}
+For example, a typical task-plan pair in the data collection phase might look like the following JSON structure:
 
-This comprehensive pipeline ensures that LAMs can effectively translate their language understanding capabilities into meaningful real-world actions.
+\begin{lstlisting}[language=JSON]
+{
+  "task_id": "powerpoint_task_001",
+  "task": "Create a slide base on draft.docx",
+  "plan": [
+    "1. Open the draft.docx and read the content.",
+    "2. Create a new PowerPoint file.",
+    "3. For page 1, add ..."
+  ],
+  "actions": [
+    {
+      "step": "open the document",
+      "controlLabel": "",
+      "controlText": "",
+      "function": "open",
+      "args": {"file_path": "draft.docx"}
+    }
+  ]
+}
+\end{lstlisting}
+
+
+\textbf{Model Training:} This critical phase transforms a general language model into a specialized action model through a progressive four-phase training strategy:
+
+\begin{itemize}
+    \item \textit{Phase 1: Task-Plan Pretraining}\\
+    In this foundational phase, the model learns to generate structured, step-by-step plans for completing tasks. Using supervised fine-tuning with cross-entropy loss:
+    
+    \begin{equation}
+    L_{SFT}(LAM^1_{\theta}) = \frac{1}{N} \sum_{i=1}^{N} L_{CE}(P^{pred}_i, P^{true}_i)
+    \end{equation}
+    
+    This establishes the model's ability to break tasks into logical sequences, creating $LAM^1$ with planning capabilities.
+    
+    \item \textit{Phase 2: Learning from Experts}\\
+    Here, the model learns to translate plans into concrete, executable actions through expert demonstrations:
+    
+    \begin{equation}
+    L_{SFT}(LAM^2_{\theta}) = \frac{1}{N} \sum_{i=1}^{N} \sum_{t=1}^{T_i} L_{CE}(LAM^2_{\theta}(s_t), a_t)
+    \end{equation}
+    
+    This phase grounds the model's reasoning in real application environments, enabling action execution.
+    
+    \item \textit{Phase 3: Self-Boosting Exploration}\\
+    Moving beyond expert-only training, this phase introduces self-improvement by letting the model attempt tasks that experts failed to solve:
+    
+    \begin{equation}
+    L_{SFT}(LAM^3_{\theta}) = \frac{1}{N} \sum_{i=1}^{N} \sum_{t=1}^{T_i} L_{CE}(LAM^3_{\theta}(s_t), a_t)
+    \end{equation}
+    
+    Though the objective function appears similar to Phase 2, the innovation lies in using an augmented dataset that includes novel successful solutions discovered by the model itself.
+    
+    \item \textit{Phase 4: Learning from a Reward Model}\\
+    The final phase introduces reinforcement learning to enable the model to learn from both successes and failures. This involves two steps:
+    
+    a) Building a reward model: $r_t = RM(s_t, a_t; \phi)$
+    
+    b) Applying Proximal Policy Optimization (PPO):
+    
+    \begin{equation}
+    L_{PPO}(LAM^4_{\theta}) = \frac{1}{N} \sum_{i=1}^{N} \sum_{t=1}^{T_i} \min\left( \left[\text{ratio} \times \hat{A}_t\right], \left[\text{clip}(\text{ratio}, 1-\varepsilon, 1+\varepsilon) \times \hat{A}_t\right] \right)
+    \end{equation}
+    
+    Where $\text{ratio} = \frac{LAM^4_{\theta}(a_t|s_t)}{LAM^4_{\theta_{old}}(a_t|s_t)}$
+    
+    This phase significantly enhances the model's decision-making abilities by incorporating feedback signals from both successful and failed attempts.
+\end{itemize}
+
+\textbf{Integration and Grounding:} Embedding the LAM within an agent framework equipped with tools, memory, and environmental interfaces. This involves:
+\begin{itemize}
+    \item \textit{Environment Interface:} Mechanisms to observe and interact with the target environment (e.g., UI Automation APIs).
+    \item \textit{Action Execution:} Systems to translate model outputs into tangible actions within the environment.
+    \item \textit{Memory Management:} Components to maintain historical actions and plans, providing context for future decisions.
+    \item \textit{Feedback Loops:} Structures to collect environmental responses and adapt accordingly.
+\end{itemize}
+
+\textbf{Rigorous Evaluation:} Testing the LAM's performance through:
+\begin{itemize}
+    \item \textit{Offline Evaluation:} Testing the model on controlled datasets to measure metrics like Task Success Rate, Object Accuracy, and Operation Accuracy without environmental interaction.
+    \item \textit{Online Evaluation:} Deploying the model in real environments to measure practical performance metrics including Task Completion Time and Average Step Latency.
+\end{itemize}
+
+
+
+This comprehensive development pipeline transforms general language models into specialized action models capable of executing complex tasks in real-world environments. Each phase builds upon the previous one, creating progressively more capable systems that combine planning abilities, expert knowledge, self-guided exploration, and reinforcement learning to achieve robust, adaptive performance.
 
 \subsection{Applications and Impact}
 LAMs enable a wide range of applications previously challenging for traditional LLMs, including:

@@ -7,8 +7,7 @@
 \providecommand{\BIBentrySTDinterwordspacing}{\spaceskip=0pt\relax}
 \providecommand{\BIBentryALTinterwordstretchfactor}{4}
 \providecommand{\BIBentryALTinterwordspacing}{\spaceskip=\fontdimen2\font plus
-\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
-  \fontdimen4\font\relax}
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus \fontdimen4\font\relax}
 \providecommand{\BIBforeignlanguage}[2]{{%
 \expandafter\ifx\csname l@#1\endcsname\relax
 \typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
@@ -22,33 +21,21 @@
 \BIBdecl
 
 \bibitem{toolformer2023}
-T.~Schick, J.~Dwivedi-Yu, R.~Dessì, R.~Raileanu, M.~Lomeli, L.~Zettlemoyer,
-  N.~Cancedda, and T.~Scialom, ``Toolformer: Language models can teach
-  themselves to use tools,'' \emph{arXiv preprint arXiv:2302.04761}, 2023.
+T.~Schick, J.~Dwivedi-Yu, R.~Dessì, R.~Raileanu, M.~Lomeli, L.~Zettlemoyer, N.~Cancedda, and T.~Scialom, ``Toolformer: Language models can teach themselves to use tools,'' \emph{arXiv preprint arXiv:2302.04761}, 2023.
 
 \bibitem{toolllm2023}
-Y.~Qin, S.~Liang, H.~Ye, M.~Zhu, C.~Zhao, S.~Li, Y.~Chen, Z.~Ding, C.~Xu
-  \emph{et~al.}, ``Toolllm: Facilitating large language models to master 16000+
-  real-world apis,'' \emph{arXiv preprint arXiv:2307.16789}, 2023.
+Y.~Qin, S.~Liang, H.~Ye, M.~Zhu, C.~Zhao, S.~Li, Y.~Chen, Z.~Ding, C.~Xu \emph{et~al.}, ``Toolllm: Facilitating large language models to master 16000+ real-world apis,'' \emph{arXiv preprint arXiv:2307.16789}, 2023.
 
 \bibitem{wang2023lam}
-Z.~Wang, Y.~Gu, Z.~Ding, Y.~Jiang, X.~Jiang, Y.~Ding, Z.~Zhao, Q.~Zhao,
-  Y.~Zhao, Y.~Dong \emph{et~al.}, ``Large action models: From inception to
-  implementation,'' \emph{arXiv preprint arXiv:2402.01686}, 2023.
+Z.~Wang, Y.~Gu, Z.~Ding, Y.~Jiang, X.~Jiang, Y.~Ding, Z.~Zhao, Q.~Zhao, Y.~Zhao, Y.~Dong \emph{et~al.}, ``Large action models: From inception to implementation,'' \emph{arXiv preprint arXiv:2402.01686}, 2023.
 
 \bibitem{mas_survey2023}
-L.~Wang, W.~Chen, J.~Peng, S.~Wu, Z.~Xi, H.~He, Y.~Xie, J.~Bian, and Y.~Min,
-  ``A survey on large language model based autonomous agents,'' \emph{arXiv
-  preprint arXiv:2308.11432}, 2023.
+L.~Wang, W.~Chen, J.~Peng, S.~Wu, Z.~Xi, H.~He, Y.~Xie, J.~Bian, and Y.~Min, ``A survey on large language model based autonomous agents,'' \emph{arXiv preprint arXiv:2308.11432}, 2023.
 
 \bibitem{xlam2024}
-Y.~Zhao, Z.~Ding, Y.~Gu, Z.~Wang, Y.~Jiang, X.~Jiang, Z.~Zhao, Q.~Zhao,
-  Y.~Zhao, Y.~Dong \emph{et~al.}, ``xlam: A family of large action models,''
-  \emph{arXiv preprint arXiv:2402.01086}, 2024.
+Y.~Zhao, Z.~Ding, Y.~Gu, Z.~Wang, Y.~Jiang, X.~Jiang, Z.~Zhao, Q.~Zhao, Y.~Zhao, Y.~Dong \emph{et~al.}, ``xlam: A family of large action models,'' \emph{arXiv preprint arXiv:2402.01086}, 2024.
 
 \bibitem{mas_business2023}
-Y.~Zhao, Y.~Jiang, Y.~Gu, Z.~Wang, Z.~Ding, X.~Jiang, Z.~Zhao, Q.~Zhao,
-  Y.~Zhao, Y.~Dong \emph{et~al.}, ``Llm-based multi-agent systems: Techniques
-  and business perspectives,'' \emph{arXiv preprint arXiv:2311.05657}, 2023.
+Y.~Zhao, Y.~Jiang, Y.~Gu, Z.~Wang, Z.~Ding, X.~Jiang, Z.~Zhao, Q.~Zhao, Y.~Zhao, Y.~Dong \emph{et~al.}, ``Llm-based multi-agent systems: Techniques and business perspectives,'' \emph{arXiv preprint arXiv:2311.05657}, 2023.
 
 \end{thebibliography}
