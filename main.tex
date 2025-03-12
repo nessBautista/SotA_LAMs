@@ -1,0 +1,130 @@
+\documentclass[journal,twoside,10pt]{IEEEtran}
+
+% Packages
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+\begin{document}
+
+\title{A State-of-the-Art Survey on AI Systems for Multi-Task Productivity: From Large Language Models to Multi-Agent Systems}
+
+\author{Your Name \\ Your Affiliation}
+
+\maketitle
+
+\begin{abstract}
+The rapid evolution of large language models (LLMs) has catalyzed the development of systems capable of performing multiple productive tasks. Early breakthroughs in language modeling paved the way for models to autonomously select and utilize external tools. Subsequent research focused on transforming these models into Large Action Models (LAMs) tailored for action execution. More recently, integrating LAMs within multi-agent systems (MASs) has emerged as a promising strategy for tackling complex, real-world tasks. This survey synthesizes historical progress, contemporary research, and future directions in the field—from LLMs using tools to MASs that achieve collaborative, autonomous task execution.
+\end{abstract}
+
+\begin{IEEEkeywords}
+LLMs, Toolformer, ToolLLM, Large Action Models, Multi-Agent Systems, Autonomous Agents, Collaborative AI
+\end{IEEEkeywords}
+
+\section{Introduction}
+Large language models (LLMs) have redefined what is possible in artificial intelligence, demonstrating unprecedented capabilities in natural language understanding and generation. Despite their success, early LLMs were inherently limited to text-based outputs and struggled with tasks requiring real-world action. Recent work has demonstrated that LLMs can be extended to identify and call appropriate tools, effectively bridging the gap between language and action. This survey reviews the evolution from tool-using LLMs to specialized Large Action Models (LAMs), and ultimately to multi-agent systems that harness these capabilities for collaborative, productive task execution.
+
+In the following sections, we outline:
+\begin{itemize}
+    \item \textbf{How we got here:} A brief history of LLMs' transformation through tool usage.
+    \item \textbf{Where we are now:} The emergence of LAMs and their integration into multi-agent frameworks.
+    \item \textbf{Where we could go next:} Challenges faced by current systems and potential directions for future research.
+\end{itemize}
+
+\section{From Language Models to Tool-Using Agents}
+Early LLMs excelled at generating human-like text but struggled with tasks that required external knowledge or precise operations. Two seminal works addressed this gap:
+
+\begin{itemize}
+    \item \textbf{Toolformer:} This work showed that LLMs can teach themselves to use external tools via self-supervised learning, enabling them to decide which APIs to call and when to integrate their results into the text prediction process \cite{toolformer2023}
+    \item \textbf{ToolLLM:} Building on the idea of tool use, ToolLLM enables LLMs to master over 16,000 real-world APIs, significantly expanding their operational scope and practical applicability \cite{toolllm2023}
+\end{itemize}
+
+These advancements marked a critical turning point, demonstrating that LLMs could transcend purely linguistic tasks to perform useful, real-world operations.
+
+\section{Large Action Models (LAMs)}
+While tool-using LLMs represent an important breakthrough, many applications require systems that can perform actions in dynamic environments rather than merely generating text. This led to the development of Large Action Models (LAMs), which are fine-tuned to execute tasks \cite{wang2023lam}.
+
+\subsection{From LLMs to LAMs: A Paradigm Shift}
+LAMs extend beyond the capabilities of traditional LLMs by bridging the gap between language understanding and action execution. As Wang et al. explain in ``Large Action Models: From Inception to Implementation,'' LAMs are designed to interpret user intentions from diverse inputs, generate actionable plans, and interact directly with both digital and physical environments.
+
+The transition from LLMs to LAMs represents a fundamental shift in AI systems—from passive text generation to active engagement with the world. While LLMs excel at generating human-like text based on user inputs, they lack the ability to directly interface with environments to execute actions. LAMs address this limitation by converting user requests into concrete, executable actions grounded in specific operational contexts.
+
+\subsection{Key Characteristics of LAMs}
+According to Wang et al., LAMs are distinguished by several advanced capabilities:
+
+\begin{itemize}
+    \item \textbf{Interpretation of User Intentions:} LAMs can accurately interpret user intentions from diverse input forms, including natural language requests, voice commands, and visual inputs.
+    \item \textbf{Action Generation:} Unlike LLMs that produce primarily textual outputs, LAMs translate user intentions into actionable steps executable within specific contexts, such as GUI operations, API calls, physical manipulations, or code generation.
+    \item \textbf{Dynamic Planning and Adaptation:} LAMs can decompose complex tasks into subtasks and further into specific action steps, adapting to environmental changes and replanning as necessary.
+    \item \textbf{Specialization and Efficiency:} By focusing on particular domains, LAMs achieve greater accuracy and adaptability while potentially operating with smaller model sizes compared to general-purpose LLMs.
+\end{itemize}
+
+\subsection{Development Pipeline for LAMs}
+Creating effective LAMs involves a systematic development process outlined by Wang et al.:
+
+\begin{enumerate}
+    \item \textbf{Data Collection and Preparation:} Gathering and curating task-specific data, including user queries, environmental contexts, and corresponding actions.
+    \item \textbf{Model Training:} Using specialized techniques such as supervised fine-tuning and reinforcement learning to train the LAM for action generation.
+    \item \textbf{Integration and Grounding:} Embedding the LAM within an agent framework equipped with tools, memory, and environmental interfaces.
+    \item \textbf{Rigorous Evaluation:} Testing the LAM's performance in both offline controlled environments and real-world online scenarios.
+\end{enumerate}
+
+This comprehensive pipeline ensures that LAMs can effectively translate their language understanding capabilities into meaningful real-world actions.
+
+\subsection{Applications and Impact}
+LAMs enable a wide range of applications previously challenging for traditional LLMs, including:
+
+\begin{itemize}
+    \item Autonomous interaction with software applications and operating systems
+    \item Control of physical devices and robotic systems
+    \item Complex task automation in specialized domains like healthcare or finance
+    \item Multi-step problem-solving that requires environmental awareness
+\end{itemize}
+
+These capabilities mark a significant advancement toward artificial general intelligence (AGI), enabling AI systems to automate tasks that were previously only possible with human intervention.
+
+LAMs thus represent a paradigm shift—from language generation to action execution—allowing AI systems to automate complex processes with minimal human intervention, substantially expanding their practical utility across numerous domains.
+
+\section{Multi-Agent Systems}
+The next step in this evolution is the integration of LAMs into multi-agent systems (MASs). In such systems, multiple agents—each potentially powered by LAMs—collaborate to accomplish tasks that exceed the capability of any single agent \cite{mas_survey2023}.
+
+\begin{itemize}
+    \item \textbf{Multi-Agent Collaboration Mechanisms:} A comprehensive survey of LLM-based MASs outlines the collaborative mechanisms, communication structures, and coordination protocols that allow multiple agents to work together efficiently.
+    \item By endowing individual agents with the ability to perform actions (through LAMs), MASs can distribute complex tasks, dynamically allocate subtasks, and achieve higher fault tolerance and robustness.
+\end{itemize}
+
+This integration marks a significant leap in AI system design, enabling real-world applications where agents interact, negotiate, and cooperate autonomously.
+
+\section{Applications and Use Cases}
+Recent studies have demonstrated practical applications of these advances:
+
+\begin{itemize}
+    \item \textbf{xLAM – A Family of Large Action Models:} The xLAM series exemplifies how LAMs can empower AI agent systems \cite{xlam2024}. These models, spanning various sizes and architectures, have been shown to excel in executing real-world tasks, including tool use and interactive operations.
+    \item \textbf{LLM-based Multi-Agent Systems: Techniques and Business Perspectives:} This work bridges the gap between academic research and practical applications \cite{mas_business2023}, discussing dynamic task decomposition, proprietary data preservation, and monetization strategies.
+\end{itemize}
+
+Together, these efforts illustrate the maturation of AI systems from isolated language models to integrated, action-capable multi-agent frameworks.
+
+\section{Challenges and Limitations}
+Despite these impressive advances, several challenges remain:
+
+\begin{itemize}
+    \item \textbf{Coordination and Planning:} Ensuring effective task allocation and dynamic planning across multiple agents remains an open problem, as discussed in studies on multi-agent systems' challenges.
+    \item \textbf{Memory and Context Management:} Maintaining coherent shared context and memory in MASs is critical to prevent cascading errors and ensure reliable performance.
+    \item \textbf{Scalability and Robustness:} As systems grow in complexity, efficient scaling and robust fault tolerance become increasingly important.
+    \item \textbf{Ethical and Safety Considerations:} The deployment of autonomous agents in real-world environments requires careful attention to safety, accountability, and ethical implications.
+\end{itemize}
+
+\section{Future Directions}
+Future research may focus on developing standardized frameworks for inter-agent communication, enhancing real-time adaptability, and integrating advanced security measures. Addressing these challenges will be key to realizing the full potential of AI systems capable of performing multiple productive tasks.
+
+\section{Conclusion}
+The evolution from LLMs to tool-using models, and ultimately to Large Action Models integrated within multi-agent systems, represents a fundamental shift in AI capabilities. By transitioning from passive text generation to active task execution, these systems are poised to transform numerous domains—from automated workflows to complex collaborative applications. While significant progress has been made, further research into coordination, scalability, and safety is essential to fully harness the power of these intelligent systems.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
