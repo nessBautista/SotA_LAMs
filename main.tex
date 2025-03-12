@@ -8,6 +8,7 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{listings}
+\usepackage{afterpage}
 
 % Custom section formatting for IEEEtran
 \makeatletter
@@ -111,40 +112,40 @@ These advancements marked a critical turning point, demonstrating that LLMs coul
 \section{Large Action Models (LAMs)}
 While tool-using LLMs represent an important breakthrough, many applications require systems that can perform actions in dynamic environments rather than merely generating text. This led to the development of Large Action Models (LAMs), which are fine-tuned to execute tasks \cite{wang2023lam}.
 
-\subsection{From LLMs to LAMs: A Paradigm Shift}
-LAMs extend beyond the capabilities of traditional LLMs by bridging the gap between language understanding and action execution. As Wang et al. explain in ``Large Action Models: From Inception to Implementation,'' LAMs are designed to interpret user intentions from diverse inputs, generate actionable plans, and interact directly with both digital and physical environments.
+\subsection{Developing and Training Large Action Models}
 
-The transition from LLMs to LAMs represents a fundamental shift in AI systems—from passive text generation to active engagement with the world. While LLMs excel at generating human-like text based on user inputs, they lack the ability to directly interface with environments to execute actions. LAMs address this limitation by converting user requests into concrete, executable actions grounded in specific operational contexts.
+Creating effective LAMs requires a systematic development pipeline that transforms a general-purpose language model into a specialized action execution system. Drawing on the insights from Wang et al.~\cite{wang2023lam}, this process encompasses several interconnected stages:
 
-\subsection{Key Characteristics of LAMs}
-According to Wang et al., LAMs are distinguished by several advanced capabilities:
+\subsubsection{Data Collection and Preparation}
+The foundation of LAM development lies in gathering and curating task-specific data. This initial phase follows a two-phase approach:
 
 \begin{itemize}
-    \item \textbf{Interpretation of User Intentions:} LAMs can accurately interpret user intentions from diverse input forms, including natural language requests, voice commands, and visual inputs.
-    \item \textbf{Action Generation:} Unlike LLMs that produce primarily textual outputs, LAMs translate user intentions into actionable steps executable within specific contexts, such as GUI operations, API calls, physical manipulations, or code generation.
-    \item \textbf{Dynamic Planning and Adaptation:} LAMs can decompose complex tasks into subtasks and further into specific action steps, adapting to environmental changes and replanning as necessary.
-    \item \textbf{Specialization and Efficiency:} By focusing on particular domains, LAMs achieve greater accuracy and adaptability while potentially operating with smaller model sizes compared to general-purpose LLMs.
+    \item \textbf{Task-Plan Data Collection:} This involves collecting user requests and corresponding step-by-step plans. Sources include application documentation, WikiHow articles, and historical search queries. Each entry typically contains a task description and a detailed plan outlining the steps required to accomplish it.
+    
+    \item \textbf{Task-Action Data Collection:} This phase converts task-plan data into executable task-action data. Each plan step is transformed into concrete, actionable instructions that can be directly executed in the target environment. This process includes instantiation (adding specific operational details), execution validation, and evaluation to ensure correctness.
 \end{itemize}
 
-\subsection{Development Pipeline for LAMs}
-Creating effective LAMs involves a systematic development process outlined by Wang et al. \cite{wang2023lam}. To understand the process of transforming a LLM into a LAM it is neccesary that we spend some time understanding the training process:
-
-\textbf{Data Collection and Preparation:} Gathering and curating task-specific data, including user queries, environmental contexts, and corresponding actions. This initial phase involves a two-phase approach:
-\begin{itemize}
-    \item \textit{Task-Plan Data Collection:} Collecting data consisting of user requests and corresponding step-by-step plans, sourced from documentation, websites like WikiHow, and search queries.
-    \item \textit{Task-Action Data Collection:} Converting task-plan data into executable task-action data, where each plan step is transformed into concrete actions that can be directly executed in the target environment.
-\end{itemize}
-For example, a typical task-plan pair in the data collection phase might look like the following JSON structure:
+For example, a typical task-plan data entry might look like:
 
 \begin{lstlisting}[language=JSON]
 {
   "task_id": "powerpoint_task_001",
-  "task": "Create a slide base on draft.docx",
+  "task": "Create a slide based on draft.docx",
   "plan": [
     "1. Open the draft.docx and read the content.",
     "2. Create a new PowerPoint file.",
     "3. For page 1, add ..."
-  ],
+  ]
+}
+\end{lstlisting}
+
+While a corresponding task-action entry would include additional execution details:
+
+\begin{lstlisting}[language=JSON]
+{
+  "task_id": "powerpoint_task_001",
+  "task": "Create a slide based on draft.docx",
+  "plan": [...],
   "actions": [
     {
       "step": "open the document",
@@ -157,70 +158,52 @@ For example, a typical task-plan pair in the data collection phase might look li
 }
 \end{lstlisting}
 
+\subsubsection{Training an LLM into a LAM: A Four-Phase Approach}
 
-\textbf{Model Training:} This critical phase transforms a general language model into a specialized action model through a progressive four-phase training strategy:
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{traning_phases.pdf}
+    \caption{Progressive four-phase training approach for transforming a general LLM into a specialized LAM.}
+    \label{fig:lam-training}
+\end{figure}
+
+The transformation of a general-purpose language model into a specialized Large Action Model represents the technical core of LAM development. Wang et al. \cite{wang2023lam} propose a systematic, four-phase training process that progressively builds capabilities from planning to action execution:
+
+\begin{enumerate}
+    \item \textbf{Task-Plan Pretraining:} In this foundational phase, the model (LAM$^1$) learns to generate structured, step-by-step plans for completing tasks. Using supervised fine-tuning with task-plan pairs, the model develops the ability to break tasks into logical sequences. At this stage, the model can generate coherent plans but lacks execution capabilities.
+    
+    \item \textbf{Learning from Experts:} In the second phase, the model (LAM$^2$) learns to translate plans into concrete, executable actions through expert demonstrations. Training uses state-action pairs where each state includes the current UI environment and task context, and each action specifies which control to interact with and how. This phase grounds the model's reasoning in real application environments.
+    
+    \item \textbf{Self-Boosting Exploration:} Moving beyond expert-only training, the third phase introduces self-improvement. LAM$^2$ attempts tasks that experts (like GPT-4o) failed to solve, generating new successful trajectories. These self-discovered solutions, combined with original expert demonstrations, create an augmented dataset used to train LAM$^3$. This represents a critical step toward greater model autonomy.
+    
+    \item \textbf{Learning from a Reward Model:} The final phase introduces reinforcement learning, enabling the model to learn from both successes and failures. First, a reward model is trained on both successful and failed trajectories, assigning positive values to successful steps and negative values to failures. Then, LAM$^4$ is fine-tuned using Proximal Policy Optimization (PPO) on previously failed trajectories, guided by the reward model's feedback. This approach significantly enhances the model's decision-making abilities in complex scenarios.
+\end{enumerate}
+
+Throughout this progressive training approach, each phase builds upon previous ones, creating increasingly capable systems that combine high-level planning, expert-guided execution, autonomous exploration, and reward-based optimization.
+
+\subsubsection{Integration and Grounding}
+Once trained, the LAM must be integrated into an agent framework to interact with real-world environments:
 
 \begin{itemize}
-    \item \textit{Phase 1: Task-Plan Pretraining}\\
-    In this foundational phase, the model learns to generate structured, step-by-step plans for completing tasks. Using supervised fine-tuning with cross-entropy loss:
+    \item \textbf{Environment Interface:} Mechanisms to observe and interact with the target environment, such as UI Automation APIs that provide information about actionable controls.
     
-    \begin{equation}
-    L_{SFT}(LAM^1_{\theta}) = \frac{1}{N} \sum_{i=1}^{N} L_{CE}(P^{pred}_i, P^{true}_i)
-    \end{equation}
+    \item \textbf{Action Execution:} Systems to translate model outputs into tangible actions within the environment, mapping predicted actions to specific function calls.
     
-    This establishes the model's ability to break tasks into logical sequences, creating $LAM^1$ with planning capabilities.
+    \item \textbf{Memory Management:} Components to maintain historical actions and plans, providing essential context for future decisions and enabling more coherent multi-step execution.
     
-    \item \textit{Phase 2: Learning from Experts}\\
-    Here, the model learns to translate plans into concrete, executable actions through expert demonstrations:
-    
-    \begin{equation}
-    L_{SFT}(LAM^2_{\theta}) = \frac{1}{N} \sum_{i=1}^{N} \sum_{t=1}^{T_i} L_{CE}(LAM^2_{\theta}(s_t), a_t)
-    \end{equation}
-    
-    This phase grounds the model's reasoning in real application environments, enabling action execution.
-    
-    \item \textit{Phase 3: Self-Boosting Exploration}\\
-    Moving beyond expert-only training, this phase introduces self-improvement by letting the model attempt tasks that experts failed to solve:
-    
-    \begin{equation}
-    L_{SFT}(LAM^3_{\theta}) = \frac{1}{N} \sum_{i=1}^{N} \sum_{t=1}^{T_i} L_{CE}(LAM^3_{\theta}(s_t), a_t)
-    \end{equation}
-    
-    Though the objective function appears similar to Phase 2, the innovation lies in using an augmented dataset that includes novel successful solutions discovered by the model itself.
-    
-    \item \textit{Phase 4: Learning from a Reward Model}\\
-    The final phase introduces reinforcement learning to enable the model to learn from both successes and failures. This involves two steps:
-    
-    a) Building a reward model: $r_t = RM(s_t, a_t; \phi)$
-    
-    b) Applying Proximal Policy Optimization (PPO):
-    
-    \begin{equation}
-    L_{PPO}(LAM^4_{\theta}) = \frac{1}{N} \sum_{i=1}^{N} \sum_{t=1}^{T_i} \min\left( \left[\text{ratio} \times \hat{A}_t\right], \left[\text{clip}(\text{ratio}, 1-\varepsilon, 1+\varepsilon) \times \hat{A}_t\right] \right)
-    \end{equation}
-    
-    Where $\text{ratio} = \frac{LAM^4_{\theta}(a_t|s_t)}{LAM^4_{\theta_{old}}(a_t|s_t)}$
-    
-    This phase significantly enhances the model's decision-making abilities by incorporating feedback signals from both successful and failed attempts.
+    \item \textbf{Feedback Loops:} Structures to collect environmental responses and adapt accordingly, allowing the agent to respond to changing conditions.
 \end{itemize}
 
-\textbf{Integration and Grounding:} Embedding the LAM within an agent framework equipped with tools, memory, and environmental interfaces. This involves:
+\subsubsection{Evaluation}
+The final stage involves rigorous assessment of the LAM's performance:
+
 \begin{itemize}
-    \item \textit{Environment Interface:} Mechanisms to observe and interact with the target environment (e.g., UI Automation APIs).
-    \item \textit{Action Execution:} Systems to translate model outputs into tangible actions within the environment.
-    \item \textit{Memory Management:} Components to maintain historical actions and plans, providing context for future decisions.
-    \item \textit{Feedback Loops:} Structures to collect environmental responses and adapt accordingly.
+    \item \textbf{Offline Evaluation:} Testing on controlled datasets without environmental interaction, measuring metrics like Task Success Rate, Object Accuracy, and Operation Accuracy.
+    
+    \item \textbf{Online Evaluation:} Deploying the model in real environments to measure practical performance, including Task Completion Time and Average Step Latency—crucial for assessing real-world applicability.
 \end{itemize}
 
-\textbf{Rigorous Evaluation:} Testing the LAM's performance through:
-\begin{itemize}
-    \item \textit{Offline Evaluation:} Testing the model on controlled datasets to measure metrics like Task Success Rate, Object Accuracy, and Operation Accuracy without environmental interaction.
-    \item \textit{Online Evaluation:} Deploying the model in real environments to measure practical performance metrics including Task Completion Time and Average Step Latency.
-\end{itemize}
-
-
-
-This comprehensive development pipeline transforms general language models into specialized action models capable of executing complex tasks in real-world environments. Each phase builds upon the previous one, creating progressively more capable systems that combine planning abilities, expert knowledge, self-guided exploration, and reinforcement learning to achieve robust, adaptive performance.
+This comprehensive development pipeline ensures that LAMs can effectively translate user intentions into meaningful actions within specific operational contexts. Each stage contributes essential capabilities, culminating in models that can perform complex, multi-step tasks in real-world environments—representing a fundamental advancement over traditional language models limited to text generation.
 
 \subsection{Applications and Impact}
 LAMs enable a wide range of applications previously challenging for traditional LLMs, including:
