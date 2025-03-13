@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  12 MAR 2025 13:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  12 MAR 2025 18:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -379,45 +379,48 @@ Underfull \hbox (badness 1668) in paragraph at lines 102--102
 []\OT1/ptm/b/n/14 II.  From Lan-guage Mod-els to Tool-
  []
 
+[1{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/up
+dmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts
+/enc/dvips/base/8r.enc}
+
+
+]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-30.
+33.
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/ot1p
 cr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 1
-31.
+34.
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/omsp
 cr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
- [1{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/u
-pdmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/font
-s/enc/dvips/base/8r.enc}
-
-
-]
-<traning_phases.pdf, id=13, 794.97pt x 614.295pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 134.
+<traning_phases.pdf, id=10, 794.97pt x 614.295pt>
 File: traning_phases.pdf Graphic file (type pdf)
 <use traning_phases.pdf>
-Package pdftex.def Info: traning_phases.pdf  used on input line 165.
+Package pdftex.def Info: traning_phases.pdf  used on input line 168.
 (pdftex.def)             Requested size: 258.0pt x 199.3623pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 165--166
+Overfull \hbox (6.0pt too wide) in paragraph at lines 168--169
  [][] 
  []
 
-
-Underfull \hbox (badness 1406) in paragraph at lines 206--207
+[2 <./traning_phases.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 1406) in paragraph at lines 209--210
 []\OT1/ptm/m/n/10 This com-pre-hen-sive de-vel-op-ment pipeline en-sures that
  []
 
-[2 <./traning_phases.pdf, page is rotated 90 degrees>] (./main.bbl [3])
-[4
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./main.bbl [4]) [5
 
 ] (./main.aux)
  ***********
@@ -426,13 +429,13 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5926 strings out of 474116
- 90998 string characters out of 5732612
- 2047187 words of memory out of 5000000
- 28230 multiletter control sequences out of 15000+600000
+ 5922 strings out of 474116
+ 90944 string characters out of 5732612
+ 2066187 words of memory out of 5000000
+ 28226 multiletter control sequences out of 15000+600000
  591822 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,736b,1745s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,1014b,1569s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/Cellar/texlive/20240312
@@ -443,10 +446,10 @@ b8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/u
 rw/times/utmbi8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 248701 bytes).
+Output written on main.pdf (5 pages, 253165 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

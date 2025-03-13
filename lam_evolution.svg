@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320">
+  <!-- Background -->
+  <rect width="800" height="320" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">
+    Figure 4.1: Evolution from Single Models to Multi-Agent Systems
+  </text>
+  
+  <!-- Timeline arrow -->
+  <line x1="50" y1="200" x2="750" y2="200" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Timeline labels -->
+  <text x="750" y="220" font-family="Arial, sans-serif" font-size="14" text-anchor="end">Increasing Capability</text>
+  <text x="750" y="240" font-family="Arial, sans-serif" font-size="14" text-anchor="end">and Complexity</text>
+  
+  <!-- Stage 1: Standalone LLMs -->
+  <circle cx="150" cy="200" r="40" fill="#e6f2ff" stroke="#3498db" stroke-width="2"/>
+  <text x="150" y="215" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Standalone</text>
+  <text x="150" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">LLMs</text>
+  
+  <!-- LLM Illustration (Stage 1) -->
+  <rect x="120" y="130" width="60" height="40" rx="5" ry="5" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="150" y="155" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">LLM</text>
+  <line x1="150" y1="170" x2="150" y2="185" stroke="#2980b9" stroke-width="2" stroke-dasharray="5,2"/>
+  
+  <!-- Stage 2: Tool-using Models -->
+  <circle cx="300" cy="200" r="40" fill="#e6f2ff" stroke="#3498db" stroke-width="2"/>
+  <text x="300" y="215" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Tool-using</text>
+  <text x="300" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Models</text>
+  
+  <!-- Tool-using Illustration (Stage 2) -->
+  <rect x="270" y="130" width="60" height="40" rx="5" ry="5" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="300" y="155" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">LLM</text>
+  <rect x="240" y="110" width="30" height="20" rx="3" ry="3" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <text x="255" y="124" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Tool 1</text>
+  <rect x="330" y="110" width="30" height="20" rx="3" ry="3" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <text x="345" y="124" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Tool 2</text>
+  <line x1="255" y1="130" x2="270" y2="140" stroke="#c0392b" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="345" y1="130" x2="330" y2="140" stroke="#c0392b" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="300" y1="170" x2="300" y2="185" stroke="#2980b9" stroke-width="2" stroke-dasharray="5,2"/>
+  
+  <!-- Stage 3: LAMs (shifted left from cx=500 to cx=420) -->
+  <circle cx="420" cy="200" r="40" fill="#e6f2ff" stroke="#3498db" stroke-width="2"/>
+  <text x="420" y="215" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">LAMs</text>
+  
+  <!-- LAM Illustration (Stage 3, also shifted) -->
+  <rect x="390" y="130" width="60" height="40" rx="5" ry="5" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="420" y="155" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">LLM</text>
+  
+  <!-- Action Layer -->
+  <rect x="390" y="85" width="60" height="20" rx="3" ry="3" fill="#27ae60" stroke="#16a085" stroke-width="1"/>
+  <text x="420" y="99" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Action Layer</text>
+  
+  <!-- Tools -->
+  <rect x="350" y="85" width="30" height="20" rx="3" ry="3" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <text x="365" y="99" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Tool</text>
+  <rect x="460" y="85" width="30" height="20" rx="3" ry="3" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <text x="475" y="99" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Tool</text>
+  
+  <!-- Connecting lines for LAM illustration -->
+  <line x1="380" y1="95" x2="390" y2="95" stroke="#c0392b" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="450" y1="95" x2="460" y2="95" stroke="#c0392b" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="420" y1="105" x2="420" y2="130" stroke="#16a085" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="420" y1="170" x2="420" y2="185" stroke="#2980b9" stroke-width="2" stroke-dasharray="5,2"/>
+  
+  <!-- Stage 4: Multi-Agent Systems (shifted left from cx=650 to cx=560) -->
+  <circle cx="560" cy="200" r="40" fill="#e6f2ff" stroke="#3498db" stroke-width="2"/>
+  <text x="560" y="215" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Multi-Agent</text>
+  <text x="560" y="235" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Systems</text>
+  
+  <!-- Multi-Agent Illustration (Stage 4, also shifted) -->
+  <!-- Left LAM -->
+  <rect x="505" y="130" width="40" height="30" rx="5" ry="5" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="525" y="150" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">LAM</text>
+  
+  <!-- Top LAM -->
+  <rect x="560" y="90" width="40" height="30" rx="5" ry="5" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="580" y="110" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">LAM</text>
+  
+  <!-- Right LAM -->
+  <rect x="615" y="130" width="40" height="30" rx="5" ry="5" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="635" y="150" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">LAM</text>
+  
+  <!-- Collaboration Layer repositioned to avoid overlap -->
+  <rect x="545" y="125" width="70" height="35" rx="3" ry="3" fill="#9b59b6" stroke="#8e44ad" stroke-width="1"/>
+  <text x="580" y="147" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle">Collaboration Layer</text>
+  
+  <!-- Connection lines between LAMs -->
+  <line x1="545" y1="130" x2="560" y2="120" stroke="#8e44ad" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="600" y1="130" x2="615" y2="130" stroke="#8e44ad" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="580" y1="120" x2="580" y2="125" stroke="#8e44ad" stroke-width="1" stroke-dasharray="3,2"/>
+  
+  <!-- Connection from Multi-Agent circle -->
+  <line x1="560" y1="170" x2="560" y2="185" stroke="#2980b9" stroke-width="2" stroke-dasharray="5,2"/>
+  
+  <!-- Stage transition arrows (updated x positions) -->
+  <!-- From Stage 1 to Stage 2 -->
+  <line x1="190" y1="200" x2="260" y2="200" stroke="#333" stroke-width="2"/>
+  <!-- From Stage 2 to Stage 3 -->
+  <line x1="340" y1="200" x2="380" y2="200" stroke="#333" stroke-width="2"/>
+  <!-- From Stage 3 to Stage 4 -->
+  <line x1="460" y1="200" x2="520" y2="200" stroke="#333" stroke-width="2"/>
+  
+  <!-- Capability indicators -->
+  <g>
+    <rect x="125" y="255" width="50" height="10" rx="2" ry="2" fill="#3498db"/>
+    <text x="150" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Basic</text>
+  </g>
+  <g>
+    <rect x="275" y="255" width="50" height="10" rx="2" ry="2" fill="#3498db"/>
+    <rect x="275" y="255" width="50" height="10" rx="2" ry="2" fill="#3498db"/>
+    <text x="300" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Enhanced</text>
+  </g>
+  <g>
+    <rect x="475" y="255" width="50" height="10" rx="2" ry="2" fill="#3498db"/>
+    <rect x="475" y="255" width="50" height="10" rx="2" ry="2" fill="#3498db"/>
+    <rect x="475" y="255" width="50" height="10" rx="2" ry="2" fill="#3498db"/>
+    <text x="500" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Advanced</text>
+  </g>
+  <g>
+    <rect x="625" y="255" width="50" height="10" rx="2" ry="2" fill="#3498db"/>
+    <rect x="625" y="255" width="50" height="10" rx="2" ry="2" fill="#3498db"/>
+    <rect x="625" y="255" width="50" height="10" rx="2" ry="2" fill="#3498db"/>
+    <rect x="625" y="255" width="50" height="10" rx="2" ry="2" fill="#3498db"/>
+    <text x="650" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Emergent</text>
+  </g>
+</svg>
