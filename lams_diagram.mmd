@@ -1,0 +1,39 @@
+flowchart LR
+    subgraph SL["Standalone LLMs"]
+        direction TB
+        LLM["LLM"]:::llmNode
+    end
+    
+    subgraph TM["Tool-using Models"]
+        direction TB
+        T1["Tool 1"]:::toolNode --> TLLM["LLM"]:::llmNode
+        T2["Tool 2"]:::toolNode --> TLLM
+    end
+    
+    subgraph LA["Large Action Models (LAMs)"]
+        direction TB
+        LT1["Tool"]:::toolNode --> AL["Action Layer"]:::actionNode
+        LT2["Tool"]:::toolNode --> AL
+        AL --> LLLM["LLM"]:::llmNode
+    end
+    
+    subgraph MAS["Multi-Agent Systems"]
+        direction TB
+        LAM1["LAM"]:::llmNode --- CL["Collaboration Layer"]:::colNode
+        LAM2["LAM"]:::llmNode --- CL
+        LAM3["LAM"]:::llmNode --- CL
+    end
+    
+    SL --> TM
+    TM --> LA
+    LA --> MAS
+    
+    
+    classDef llmNode fill:#3498db,color:white,stroke:#2980b9,stroke-width:2px
+    classDef toolNode fill:#e74c3c,color:white,stroke:#c0392b,stroke-width:1px
+    classDef actionNode fill:#27ae60,color:white,stroke:#16a085,stroke-width:1px
+    classDef colNode fill:#9b59b6,color:white,stroke:#8e44ad,stroke-width:1px
+    classDef capBasic fill:#3498db,color:white,width:50px
+    classDef capEnhanced fill:#3498db,color:white,width:100px
+    classDef capAdvanced fill:#3498db,color:white,width:150px 
+    classDef capEmergent fill:#3498db,color:white,width:200px

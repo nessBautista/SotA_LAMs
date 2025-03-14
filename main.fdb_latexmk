@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1741825743.87525 "main.aux" "main.bbl" "main" 1741825744.52744 0
+["bibtex main"] 1741980288.64443 "main.aux" "main.bbl" "main" 1741980289.29469 0
   "./references.bib" 1741748704.61724 1985 869c017955176e5c3d64c3a54c9c0a2f ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1710106625 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1741825744.34223 2218 6fd41bc3d521143300478f3658e2f244 "pdflatex"
+  "main.aux" 1741980289.13883 2421 129f76efa0324fae91ad853e1f9e6069 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1741825743.94608 "/Users/ness/Workspace/SotA_LAMs/main.tex" "main.pdf" "main" 1741825744.52757 0
-  "/Users/ness/Workspace/SotA_LAMs/main.tex" 1741825743.06172 24021 242f5fab0a721ba67975a767fb85d582 ""
+["pdflatex"] 1741980288.72868 "/Users/ness/Workspace/SotA_LAMs/main.tex" "main.pdf" "main" 1741980289.29481 0
+  "/Users/ness/Workspace/SotA_LAMs/main.tex" 1741980287.75747 24319 9507eb4527c53b2932bc82b69983ac39 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1710106625 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/fontname/texfonts.map" 1710106625 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1710106625 5472554 f7861620179a71a79d4bd86251f559d0 ""
@@ -80,9 +80,10 @@
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/web2c/texmf.cnf" 1710106625 41652 e14926ab86fde7902cad99d9eeaa5ca5 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1710106625 8221880 586024644079ee3bb0c221d6d52d1611 ""
   "IEEEtran.cls" 1732556894 288451 2ca944e3837f3f55e325ddfd2f1a2479 ""
-  "main.aux" 1741825744.34223 2218 6fd41bc3d521143300478f3658e2f244 "pdflatex"
-  "main.bbl" 1741825743.9444 1572 7abfb557798b88691e18b3be8ec9de78 "bibtex main"
-  "main.tex" 1741825743.06172 24021 242f5fab0a721ba67975a767fb85d582 ""
+  "lams_diagram.pdf" 1741977980.72099 36325 0b7bd0d64fa543af316186eb8b01c00b ""
+  "main.aux" 1741980289.13883 2421 129f76efa0324fae91ad853e1f9e6069 "pdflatex"
+  "main.bbl" 1741980288.72693 1572 7abfb557798b88691e18b3be8ec9de78 "bibtex main"
+  "main.tex" 1741980287.75747 24319 9507eb4527c53b2932bc82b69983ac39 ""
   "traning_phases.pdf" 1741807939.27219 140627 dd113c1c99f3a7f85814f5574dacd159 ""
   (generated)
   "main.aux"

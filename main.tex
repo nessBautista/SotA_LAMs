@@ -99,7 +99,9 @@ In the following sections, we outline:
     \item \textbf{Where we could go next:} Challenges faced by current systems and potential directions for future research.
 \end{itemize}
 
-\section{From Language Models to Tool-Using Agents}
+\section{Literature Review}
+
+\subsection{From Language Models to Tool-Using Agents}
 The trajectory of artificial intelligence has witnessed a fundamental transformation, evolving from passive text generators to active task executors capable of meaningful real-world interactions. While Large Language Models (LLMs) have demonstrated remarkable natural language capabilities, they encounter significant limitations when confronted with practical tasks requiring up-to-date information access, mathematical computation, and environmental interaction. Despite their sophisticated language understanding, traditional LLMs paradoxically struggle with basic functionalities where much simpler specialized tools excel, creating a critical disconnect between conceptual understanding and practical execution that scaling model size alone cannot resolve.
 
 This evolution addresses a fundamental user expectation shift summarized by the maxim "actions speak louder than words." Modern users increasingly demand AI assistants that execute real-world tasks rather than merely describing them, driving researchers to develop systems bridging the gap between understanding intentions and translating them into concrete actions within specific environments. Two significant innovations exemplify this transition: Toolformer and ToolLLM.
@@ -112,14 +114,14 @@ These complementary innovations mark a critical turning point in AI development,
 
 These advancements marked a critical turning point, demonstrating that LLMs could transcend purely linguistic tasks to perform useful, real-world operations.
 
-\section{Large Action Models (LAMs)}
+\subsection{Large Action Models (LAMs)}
 While tool-using LLMs represent an important breakthrough, many applications require systems that can perform actions in dynamic environments rather than merely generating text. This led to the development of Large Action Models (LAMs), which are fine-tuned to execute tasks \cite{wang2023lam}.
 
-\subsection{Developing and Training Large Action Models}
+\subsubsection{Developing and Training Large Action Models}
 
 Creating effective LAMs requires a systematic development pipeline that transforms a general-purpose language model into a specialized action execution system. Drawing on the insights from Wang et al.~\cite{wang2023lam}, this process encompasses several interconnected stages:
 
-\subsubsection{Data Collection and Preparation}
+\paragraph{Data Collection and Preparation}
 The foundation of LAM development lies in gathering and curating task-specific data. This initial phase follows a two-phase approach:
 
 \begin{itemize}
@@ -161,7 +163,7 @@ While a corresponding task-action entry would include additional execution detai
 }
 \end{lstlisting}
 
-\subsubsection{Training an LLM into a LAM: A Four-Phase Approach}
+\paragraph{Training an LLM into a LAM: A Four-Phase Approach}
 
 \begin{figure}[htbp]
     \centering
@@ -184,7 +186,7 @@ The transformation of a general-purpose language model into a specialized Large 
 
 Throughout this progressive training approach, each phase builds upon previous ones, creating increasingly capable systems that combine high-level planning, expert-guided execution, autonomous exploration, and reward-based optimization.
 
-\subsubsection{Integration and Grounding}
+\paragraph{Integration and Grounding}
 Once trained, the LAM must be integrated into an agent framework to interact with real-world environments:
 
 \begin{itemize}
@@ -197,7 +199,7 @@ Once trained, the LAM must be integrated into an agent framework to interact wit
     \item \textbf{Feedback Loops:} Structures to collect environmental responses and adapt accordingly, allowing the agent to respond to changing conditions.
 \end{itemize}
 
-\subsubsection{Evaluation}
+\paragraph{Evaluation}
 The final stage involves rigorous assessment of the LAM's performance:
 
 \begin{itemize}
@@ -208,7 +210,7 @@ The final stage involves rigorous assessment of the LAM's performance:
 
 This comprehensive development pipeline ensures that LAMs can effectively translate user intentions into meaningful actions within specific operational contexts. Each stage contributes essential capabilities, culminating in models that can perform complex, multi-step tasks in real-world environments—representing a fundamental advancement over traditional language models limited to text generation.
 
-\subsection{Applications and Impact}
+\subsubsection{Applications and Impact}
 LAMs enable a wide range of applications previously challenging for traditional LLMs, including:
 
 \begin{itemize}
@@ -222,7 +224,16 @@ These capabilities mark a significant advancement toward artificial general inte
 
 LAMs thus represent a paradigm shift—from language generation to action execution—allowing AI systems to automate complex processes with minimal human intervention, substantially expanding their practical utility across numerous domains.
 
-\section{Multi-Agent Systems}
+\subsection{Multi-Agent Systems}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth, trim=0 150pt 0 150pt, clip]{lams_diagram.pdf}
+    \caption{Evolution of AI systems from standalone LLMs to multi-agent systems.}
+    \label{fig:lam-evolution}
+\end{figure}
+
+
 The integration of Large Action Models (LAMs) into multi-agent systems (MASs) represents the next frontier in AI system design. While LAMs enable individual AI systems to execute actions in the real world, their true potential emerges when multiple such agents collaborate to accomplish tasks that exceed the capability of any single agent. This collaborative approach fundamentally transforms how AI operates by shifting from isolated models toward interconnected systems that can distribute complex problems, dynamically allocate resources, and achieve higher levels of robustness through redundancy.
 
 At their core, LLM-based multi-agent systems consist of multiple interacting intelligent entities, each potentially powered by a LAM. Every agent operates with its own language model serving as its cognitive "brain," specialized memory and knowledge base, defined objectives guiding its actions, environmental awareness providing context, and action capabilities enabled through LAM integration. The connective tissue between these agents—the collaboration channels—enables them to communicate, coordinate, and collectively tackle complex, multi-step challenges.
@@ -241,7 +252,7 @@ Despite their promise, these systems face important challenges that ongoing rese
 
 As research in this field advances, addressing these challenges will be crucial for realizing the full potential of multi-agent systems in productive AI applications. The trajectory from language models to action-capable agents to collaborative multi-agent systems represents not merely an incremental improvement but a fundamental paradigm shift in how AI systems can perceive, reason, and act in the world.
 
-\section{Applications and Use Cases}
+\subsection{Applications and Use Cases}
 Recent studies have demonstrated practical applications of these advances:
 
 \begin{itemize}
@@ -251,8 +262,8 @@ Recent studies have demonstrated practical applications of these advances:
 
 Together, these efforts illustrate the maturation of AI systems from isolated language models to integrated, action-capable multi-agent frameworks.
 
-\section{Challenges and Limitations}
-Despite these impressive advances, several challenges remain:
+\section{Future Directions}
+Despite these impressive advances, several challenges remain that point to important future research directions:
 
 \begin{itemize}
     \item \textbf{Coordination and Planning:} Ensuring effective task allocation and dynamic planning across multiple agents remains an open problem, as discussed in studies on multi-agent systems' challenges.
@@ -261,7 +272,6 @@ Despite these impressive advances, several challenges remain:
     \item \textbf{Ethical and Safety Considerations:} The deployment of autonomous agents in real-world environments requires careful attention to safety, accountability, and ethical implications.
 \end{itemize}
 
-\section{Future Directions}
 Future research may focus on developing standardized frameworks for inter-agent communication, enhancing real-time adaptability, and integrating advanced security measures. Addressing these challenges will be key to realizing the full potential of AI systems capable of performing multiple productive tasks.
 
 \section{Conclusion}

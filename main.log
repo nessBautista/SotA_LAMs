@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  12 MAR 2025 18:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  14 MAR 2025 13:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -374,68 +374,101 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/um
 sb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 1668) in paragraph at lines 102--102
-[]\OT1/ptm/b/n/14 II.  From Lan-guage Mod-els to Tool-
- []
-
-[1{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/up
-dmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts
-/enc/dvips/base/8r.enc}
+) [1{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/
+updmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fon
+ts/enc/dvips/base/8r.enc}
 
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-33.
+35.
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/ot1p
 cr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 1
-34.
+36.
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/omsp
 cr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 134.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 136.
 <traning_phases.pdf, id=10, 794.97pt x 614.295pt>
 File: traning_phases.pdf Graphic file (type pdf)
 <use traning_phases.pdf>
-Package pdftex.def Info: traning_phases.pdf  used on input line 168.
+Package pdftex.def Info: traning_phases.pdf  used on input line 170.
 (pdftex.def)             Requested size: 258.0pt x 199.3623pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 168--169
+Overfull \hbox (6.0pt too wide) in paragraph at lines 170--171
  [][] 
  []
 
 [2 <./traning_phases.pdf, page is rotated 90 degrees>]
-Underfull \hbox (badness 1406) in paragraph at lines 209--210
+Underfull \hbox (badness 1406) in paragraph at lines 211--212
 []\OT1/ptm/m/n/10 This com-pre-hen-sive de-vel-op-ment pipeline en-sures that
  []
 
-[3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<lams_diagram.pdf, id=22, 794.97pt x 614.295pt>
+File: lams_diagram.pdf Graphic file (type pdf)
+<use lams_diagram.pdf>
+Package pdftex.def Info: lams_diagram.pdf  used on input line 231.
+(pdftex.def)             Requested size: 258.0pt x 102.00078pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 231--232
+ [][] 
+ []
+
+[3 <./lams_diagram.pdf, page is rotated 90 degrees>] [4] (./main.bbl
+Underfull \hbox (badness 3019) in paragraph at lines 39--40
+[]\OT1/ptm/m/n/8 Y. Yang, Q. Peng, J. Wang, Y. Wen, and W. Zhang, ``LLM-
+ []
 
 
-(./main.bbl [4]) [5
+Underfull \hbox (badness 2932) in paragraph at lines 39--40
+\OT1/ptm/m/it/8 arXiv preprint arXiv:2411.14033\OT1/ptm/m/n/8 , Dec. 2024. [On-
+line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 42--43
+[]\OT1/ptm/m/n/8 S. Han, Q. Zhang, Y. Yao, W. Jin, Z. Xu, and C. He, ``LLM
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\OT1/ptm/m/n/8 Multi-Agent Sys-tems: Chal-lenges and Open Prob-lems,'' \OT1/ptm
+/m/it/8 arXiv
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+\OT1/ptm/m/it/8 preprint arXiv:2402.03578\OT1/ptm/m/n/8 , Feb. 2024. [On-line].
+ Avail-able:
+ []
+
+) [5
 
 ] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 5922 strings out of 474116
- 90944 string characters out of 5732612
+ 5938 strings out of 474116
+ 91272 string characters out of 5732612
  2066187 words of memory out of 5000000
- 28226 multiletter control sequences out of 15000+600000
+ 28242 multiletter control sequences out of 15000+600000
  591822 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,1014b,1569s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,7n,65p,1014b,1418s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/Cellar/texlive/20240312
@@ -446,10 +479,10 @@ b8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/u
 rw/times/utmbi8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 253165 bytes).
+Output written on main.pdf (5 pages, 291126 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
