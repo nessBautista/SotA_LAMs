@@ -102,24 +102,27 @@ In the following sections, we outline:
 \section{Literature Review}
 
 \subsection{From Language Models to Tool-Using Agents}
-The trajectory of artificial intelligence has witnessed a fundamental transformation, evolving from passive text generators to active task executors capable of meaningful real-world interactions. While Large Language Models (LLMs) have demonstrated remarkable natural language capabilities, they encounter significant limitations when confronted with practical tasks requiring up-to-date information access, mathematical computation, and environmental interaction. Despite their sophisticated language understanding, traditional LLMs paradoxically struggle with basic functionalities where much simpler specialized tools excel, creating a critical disconnect between conceptual understanding and practical execution that scaling model size alone cannot resolve.
 
-This evolution addresses a fundamental user expectation shift summarized by the maxim "actions speak louder than words." Modern users increasingly demand AI assistants that execute real-world tasks rather than merely describing them, driving researchers to develop systems bridging the gap between understanding intentions and translating them into concrete actions within specific environments. Two significant innovations exemplify this transition: Toolformer and ToolLLM.
+Advancements in artificial intelligence have accelerated in recent years, particularly with the introduction of the transformer architecture. This innovation enabled commercial LLM-supported products and significantly impacted society's understanding of AI. From a product engineering perspective, where user interface design is paramount and team value comes from well-crafted experiences, the chat interface has been widely embraced. This rapid adoption is no coincidence—our first interactions with LLMs occurred through interfaces that create the impression of conversing with another person, resulting in a natural experience that increased user adoption.
 
-Toolformer represents a breakthrough in addressing LLM limitations through tool integration, enabling models to autonomously determine when external tools are needed, select appropriate ones, and incorporate their outputs into ongoing language generation. Its distinctive self-supervised learning methodology implements a streamlined three-step process that samples potential API calls using in-context learning, executes these calls to obtain results, and filters them based on perplexity reduction. This approach creates a more adaptive system capable of determining which tools benefit specific contexts without extensive human annotation.
+Initially, the value users derived from these interfaces was largely limited to text generation. As interactions became multimodal, the term "Generative AI" become popular to describe these systems. This term reflects both their architectural approach to generating outputs and their perceived intelligence and creativity—their ability to create new ideas, images, and sounds. This framing helps us understand phenomena like "hallucinations" and other characteristics of these AI systems.
 
-Building on this foundation, ToolLLM introduces a comprehensive framework for training models to effectively utilize external tools through API calls. It contributes three key innovations: a systematic methodology for converting conventional dialogue datasets into tool-use examples through automated annotation; ToolBench, a diverse dataset spanning over 16,000 real-world scenarios across various domains; and a training approach enabling models to make effective API calls without human intervention. Performance evaluations demonstrate that tool-augmented models significantly outperform standard approaches, particularly in generating syntactically correct API calls, tool selection, and output integration.
+In brief, contrary to science fiction's predictions, we have developed a form of artificial intelligence that excels more at creative tasks than logical ones. This observation sets the foundation for our literature review: while current AI shows immense potential, it still lacks the reliability needed for complex task execution.
 
-These complementary innovations mark a critical turning point in AI development, establishing a new paradigm where language models transcend purely linguistic tasks to perform useful, real-world operations. By maintaining sophisticated language understanding while gaining access to specialized functionality, tool-augmented systems offer a cost-effective approach to enhancing model capabilities without increasing model size, potentially transforming how AI assistants support human productivity across diverse domains.
+In this research exercise, we identify a trend of evolution that expands around 3 years, i.e., \cite{schick2023toolformer, qin2023toolllm}. Researchers noticed the potential of the LLMs to be used for more than just text generation, as they display excellent ability to understand and produce structured output, there was a possibility of integrate with existing software artifacts already in place, such as APIs, SDKs, and any other programmable interface.
 
-These advancements marked a critical turning point, demonstrating that LLMs could transcend purely linguistic tasks to perform useful, real-world operations.
+API's where one of the most natural places to start with.  Toolformer (Schick et al., 2023)~\cite{schick2023toolformer} represents a breakthrough in addressing LLM limitations through tool integration, enabling models to autonomously determine when external tools are needed, select appropriate ones, and incorporate their outputs into ongoing language generation. Its distinctive self-supervised learning methodology implements a streamlined three-step process that samples potential API calls using in-context learning, executes these calls to obtain results, and filters them based on perplexity reduction. This approach creates a more adaptive system capable of determining which tools benefit specific contexts without extensive human annotation.
+
+Expanding this line of research, ToolLLM (Qin et al., 2023)~\cite{qin2023toolllm} introduces a comprehensive framework for training models to effectively utilize external tools through API calls. It contributes three key innovations: a systematic methodology for converting conventional dialogue datasets into tool-use examples through automated annotation; ToolBench, a diverse dataset spanning over 16,000 real-world scenarios across various domains; and a training approach enabling models to make effective API calls without human intervention. Performance evaluations demonstrate that tool-augmented models significantly outperform standard approaches, particularly in generating syntactically correct API calls, tool selection, and output integration.
+
+These complementary innovations mark a crucial first step in improving the reliability of AI systems for performing specific tasks by establishing a new paradigm where language models can handle tasks beyond linguistics to perform useful, real-world operations. By maintaining sophisticated language understanding while gaining access to specialized functionality, tool-augmented systems offer a cost-effective approach to enhancing model capabilities without increasing model size, potentially transforming how AI assistants support human productivity across diverse domains.
 
 \subsection{Large Action Models (LAMs)}
-While tool-using LLMs represent an important breakthrough, many applications require systems that can perform actions in dynamic environments rather than merely generating text. This led to the development of Large Action Models (LAMs), which are fine-tuned to execute tasks \cite{wang2023lam}.
+While tool-using LLMs represent an important breakthrough, many applications require systems that can perform actions in dynamic environments rather than merely generating text. This led to the development of Large Action Models (LAMs), which are fine-tuned to execute tasks \cite{wang2025lam}.
 
 \subsubsection{Developing and Training Large Action Models}
 
-Creating effective LAMs requires a systematic development pipeline that transforms a general-purpose language model into a specialized action execution system. Drawing on the insights from Wang et al.~\cite{wang2023lam}, this process encompasses several interconnected stages:
+Creating effective LAMs requires a systematic development pipeline that transforms a general-purpose language model into a specialized action execution system. Drawing on the insights from Wang et al.~\cite{wang2025lam}, this process encompasses several interconnected stages:
 
 \paragraph{Data Collection and Preparation}
 The foundation of LAM development lies in gathering and curating task-specific data. This initial phase follows a two-phase approach:
@@ -172,7 +175,7 @@ While a corresponding task-action entry would include additional execution detai
     \label{fig:lam-training}
 \end{figure}
 
-The transformation of a general-purpose language model into a specialized Large Action Model represents the technical core of LAM development. Wang et al. \cite{wang2023lam} propose a systematic, four-phase training process that progressively builds capabilities from planning to action execution:
+The transformation of a general-purpose language model into a specialized Large Action Model represents the technical core of LAM development. Wang et al. \cite{wang2025lam} propose a systematic, four-phase training process that progressively builds capabilities from planning to action execution:
 
 \begin{enumerate}
     \item \textbf{Task-Plan Pretraining:} In this foundational phase, the model (LAM$^1$) learns to generate structured, step-by-step plans for completing tasks. Using supervised fine-tuning with task-plan pairs, the model develops the ability to break tasks into logical sequences. At this stage, the model can generate coherent plans but lacks execution capabilities.
@@ -233,8 +236,7 @@ LAMs thus represent a paradigm shift—from language generation to action execut
     \label{fig:lam-evolution}
 \end{figure}
 
-
-The integration of Large Action Models (LAMs) into multi-agent systems (MASs) represents the next frontier in AI system design. While LAMs enable individual AI systems to execute actions in the real world, their true potential emerges when multiple such agents collaborate to accomplish tasks that exceed the capability of any single agent. This collaborative approach fundamentally transforms how AI operates by shifting from isolated models toward interconnected systems that can distribute complex problems, dynamically allocate resources, and achieve higher levels of robustness through redundancy.
+The integration of Large Action Models (LAMs) into multi-agent systems (MASs) represents the next frontier in AI system design~\cite{tran2025multiagent}. While LAMs enable individual AI systems to execute actions in the real world, their true potential emerges when multiple such agents collaborate to accomplish tasks that exceed the capability of any single agent. This collaborative approach fundamentally transforms how AI operates by shifting from isolated models toward interconnected systems that can distribute complex problems, dynamically allocate resources, and achieve higher levels of robustness through redundancy.
 
 At their core, LLM-based multi-agent systems consist of multiple interacting intelligent entities, each potentially powered by a LAM. Every agent operates with its own language model serving as its cognitive "brain," specialized memory and knowledge base, defined objectives guiding its actions, environmental awareness providing context, and action capabilities enabled through LAM integration. The connective tissue between these agents—the collaboration channels—enables them to communicate, coordinate, and collectively tackle complex, multi-step challenges.
 
@@ -256,8 +258,8 @@ As research in this field advances, addressing these challenges will be crucial 
 Recent studies have demonstrated practical applications of these advances:
 
 \begin{itemize}
-    \item \textbf{xLAM – A Family of Large Action Models:} The xLAM series exemplifies how LAMs can empower AI agent systems \cite{xlam2024}. These models, spanning various sizes and architectures, have been shown to excel in executing real-world tasks, including tool use and interactive operations.
-    \item \textbf{LLM-based Multi-Agent Systems: Techniques and Business Perspectives:} This work bridges the gap between academic research and practical applications \cite{mas_business2023}, discussing dynamic task decomposition, proprietary data preservation, and monetization strategies.
+    \item \textbf{xLAM – A Family of Large Action Models:} The xLAM series exemplifies how LAMs can empower AI agent systems \cite{zhang2024xlam}. These models, spanning various sizes and architectures, have been shown to excel in executing real-world tasks, including tool use and interactive operations.
+    \item \textbf{LLM-based Multi-Agent Systems: Techniques and Business Perspectives:} This work bridges the gap between academic research and practical applications \cite{yang2024llmbased}, discussing dynamic task decomposition, proprietary data preservation, and monetization strategies.
 \end{itemize}
 
 Together, these efforts illustrate the maturation of AI systems from isolated language models to integrated, action-capable multi-agent frameworks.
@@ -266,7 +268,7 @@ Together, these efforts illustrate the maturation of AI systems from isolated la
 Despite these impressive advances, several challenges remain that point to important future research directions:
 
 \begin{itemize}
-    \item \textbf{Coordination and Planning:} Ensuring effective task allocation and dynamic planning across multiple agents remains an open problem, as discussed in studies on multi-agent systems' challenges.
+    \item \textbf{Coordination and Planning:} Ensuring effective task allocation and dynamic planning across multiple agents remains an open problem, as discussed in studies on multi-agent systems' challenges~\cite{han2024llm}.
     \item \textbf{Memory and Context Management:} Maintaining coherent shared context and memory in MASs is critical to prevent cascading errors and ensure reliable performance.
     \item \textbf{Scalability and Robustness:} As systems grow in complexity, efficient scaling and robust fault tolerance become increasingly important.
     \item \textbf{Ethical and Safety Considerations:} The deployment of autonomous agents in real-world environments requires careful attention to safety, accountability, and ethical implications.
@@ -279,5 +281,5 @@ The evolution from LLMs to tool-using models, and ultimately to Large Action Mod
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
-
+ 
 \end{document}
