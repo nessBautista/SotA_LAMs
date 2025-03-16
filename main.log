@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  16 MAR 2025 15:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  16 MAR 2025 15:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -428,7 +428,10 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 214--215
 LaTeX Warning: Citation `yang2024llmbased' on page 4 undefined on input line 24
 0.
 
-[4] (./main.bbl
+[4]
+Underfull \vbox (badness 1895) has occurred while \output is active []
+
+ (./main.bbl
 Underfull \hbox (badness 1762) in paragraph at lines 42--43
 []\OT1/ptm/m/n/8 S. Han, Q. Zhang, Q. Yao, W. Jin, Z. Xu, and X. He, ``Llm
  []
@@ -445,9 +448,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 Avail-able:
  []
 
-) [5
-
-] (./main.aux)
+) [5] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -475,7 +476,7 @@ b8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/u
 rw/times/utmbi8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 292551 bytes).
+Output written on main.pdf (5 pages, 295170 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
