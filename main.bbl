@@ -29,6 +29,9 @@ Y.~Qin, S.~Liang, H.~Ye, K.~Zhu, L.~Yan, Y.~Lu, Y.~Lin, X.~Cong, X.~Tang, B.~Qia
 \bibitem{wang2025lam}
 L.~Wang, F.~Yang, C.~Zhang, J.~Lu, J.~Qian, S.~He, P.~Zhao, B.~Qiao, R.~Huang, S.~Qin, Q.~Su, J.~Ye, Y.~Zhang, J.-G. Lou, Q.~Lin, S.~Rajmohan, D.~Zhang, and Q.~Zhang, ``Large action models: From inception to implementation,'' \emph{arXiv preprint arXiv:2412.10047}, Jan 2025, [Online]. Available: https://arxiv.org/abs/2412.10047. [Accessed: Mar. 14, 2025].
 
+\bibitem{yao2022react}
+S.~Yao, J.~Zhao, D.~Yu, N.~Du, I.~Shafran, K.~Narasimhan, and Y.~Cao, ``React: Synergizing reasoning and acting in language models,'' \emph{arXiv preprint arXiv:2210.03629}, Oct 2022, [Online]. Available: https://arxiv.org/pdf/2210.03629. [Accessed: Mar. 14, 2025].
+
 \bibitem{tran2025multiagent}
 K.-T. Tran, D.~Dao, M.-D. Nguyen, Q.-V. Pham, B.~O'Sullivan, and H.~D. Nguyen, ``Multi-agent collaboration mechanisms: A survey of llms,'' \emph{arXiv preprint arXiv:2501.06322}, Jan 2025, [Online]. Available: https://arxiv.org/abs/2501.06322. [Accessed: Mar. 14, 2025].
 
