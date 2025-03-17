@@ -12,24 +12,8 @@
 \usepackage{listings}
 \usepackage{afterpage}
 
-% Custom section formatting for IEEEtran
+% Remove custom section formatting and use standard IEEEtran formatting
 \makeatletter
-% Use Roman numerals for sections
-\renewcommand\thesection{\Roman{section}}
-% Format sections with Roman numerals and add period
-\renewcommand\section{\@startsection{section}{1}{\z@}%
-                       {-3.5ex \@plus -1ex \@minus -.2ex}%
-                       {2.3ex \@plus.2ex}%
-                       {\normalfont\Large\bfseries\Roman{section}.\quad}}
-% Keep subsections unnumbered with no dot
-\renewcommand\thesubsection{}
-% Redefine subsection to avoid using any numbering
-\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
-                       {-3.25ex\@plus -1ex \@minus -.2ex}%
-                       {1.5ex \@plus .2ex}%
-                       {\normalfont\large\bfseries}}
-% Empty section format to prevent automatic numbering
-\renewcommand\@seccntformat[1]{}
 \def\IEEEkeywordsname{Keywords}
 \makeatother
 

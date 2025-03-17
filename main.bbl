@@ -7,8 +7,7 @@
 \providecommand{\BIBentrySTDinterwordspacing}{\spaceskip=0pt\relax}
 \providecommand{\BIBentryALTinterwordstretchfactor}{4}
 \providecommand{\BIBentryALTinterwordspacing}{\spaceskip=\fontdimen2\font plus
-\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
-  \fontdimen4\font\relax}
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus \fontdimen4\font\relax}
 \providecommand{\BIBforeignlanguage}[2]{{%
 \expandafter\ifx\csname l@#1\endcsname\relax
 \typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
@@ -22,102 +21,39 @@
 \BIBdecl
 
 \bibitem{schick2023toolformer}
-T.~Schick, J.~Dwivedi-Yu, R.~Dessì, R.~Raileanu, M.~Lomeli, L.~Zettlemoyer,
-  N.~Cancedda, and T.~Scialom, ``Toolformer: Language models can teach
-  themselves to use tools,'' \emph{arXiv preprint arXiv:2302.04761}, Feb 2023,
-  [Online]. Available: https://arxiv.org/abs/2302.04761. [Accessed: Mar. 14,
-  2025].
+T.~Schick, J.~Dwivedi-Yu, R.~Dessì, R.~Raileanu, M.~Lomeli, L.~Zettlemoyer, N.~Cancedda, and T.~Scialom, ``Toolformer: Language models can teach themselves to use tools,'' \emph{arXiv preprint arXiv:2302.04761}, Feb 2023, [Online]. Available: https://arxiv.org/abs/2302.04761. [Accessed: Mar. 14, 2025].
 
 \bibitem{qin2023toolllm}
-Y.~Qin, S.~Liang, H.~Ye, K.~Zhu, L.~Yan, Y.~Lu, Y.~Lin, X.~Cong, X.~Tang,
-  B.~Qian, S.~Zhao, L.~Hong, R.~Tian, R.~Xie, J.~Zhou, M.~Gerstein, D.~Li,
-  Z.~Liu, and M.~Sun, ``Toolllm: Facilitating large language models to master
-  16000+ real-world apis,'' \emph{arXiv preprint arXiv:2307.16789}, Oct 2023,
-  [Online]. Available: https://arxiv.org/abs/2307.16789. [Accessed: Mar. 14,
-  2025].
+Y.~Qin, S.~Liang, H.~Ye, K.~Zhu, L.~Yan, Y.~Lu, Y.~Lin, X.~Cong, X.~Tang, B.~Qian, S.~Zhao, L.~Hong, R.~Tian, R.~Xie, J.~Zhou, M.~Gerstein, D.~Li, Z.~Liu, and M.~Sun, ``Toolllm: Facilitating large language models to master 16000+ real-world apis,'' \emph{arXiv preprint arXiv:2307.16789}, Oct 2023, [Online]. Available: https://arxiv.org/abs/2307.16789. [Accessed: Mar. 14, 2025].
 
 \bibitem{wang2025lam}
-L.~Wang, F.~Yang, C.~Zhang, J.~Lu, J.~Qian, S.~He, P.~Zhao, B.~Qiao, R.~Huang,
-  S.~Qin, Q.~Su, J.~Ye, Y.~Zhang, J.-G. Lou, Q.~Lin, S.~Rajmohan, D.~Zhang, and
-  Q.~Zhang, ``Large action models: From inception to implementation,''
-  \emph{arXiv preprint arXiv:2412.10047}, Jan 2025, [Online]. Available:
-  https://arxiv.org/abs/2412.10047. [Accessed: Mar. 14, 2025].
+L.~Wang, F.~Yang, C.~Zhang, J.~Lu, J.~Qian, S.~He, P.~Zhao, B.~Qiao, R.~Huang, S.~Qin, Q.~Su, J.~Ye, Y.~Zhang, J.-G. Lou, Q.~Lin, S.~Rajmohan, D.~Zhang, and Q.~Zhang, ``Large action models: From inception to implementation,'' \emph{arXiv preprint arXiv:2412.10047}, Jan 2025, [Online]. Available: https://arxiv.org/abs/2412.10047. [Accessed: Mar. 14, 2025].
 
 \bibitem{yao2022react}
-S.~Yao, J.~Zhao, D.~Yu, N.~Du, I.~Shafran, K.~Narasimhan, and Y.~Cao, ``React:
-  Synergizing reasoning and acting in language models,'' \emph{arXiv preprint
-  arXiv:2210.03629}, Oct 2022, [Online]. Available:
-  https://arxiv.org/pdf/2210.03629. [Accessed: Mar. 14, 2025].
+S.~Yao, J.~Zhao, D.~Yu, N.~Du, I.~Shafran, K.~Narasimhan, and Y.~Cao, ``React: Synergizing reasoning and acting in language models,'' \emph{arXiv preprint arXiv:2210.03629}, Oct 2022, [Online]. Available: https://arxiv.org/pdf/2210.03629. [Accessed: Mar. 14, 2025].
 
 \bibitem{tran2025multiagent}
-K.-T. Tran, D.~Dao, M.-D. Nguyen, Q.-V. Pham, B.~O'Sullivan, and H.~D. Nguyen,
-  ``Multi-agent collaboration mechanisms: A survey of llms,'' \emph{arXiv
-  preprint arXiv:2501.06322}, Jan 2025, [Online]. Available:
-  https://arxiv.org/abs/2501.06322. [Accessed: Mar. 14, 2025].
+K.-T. Tran, D.~Dao, M.-D. Nguyen, Q.-V. Pham, B.~O'Sullivan, and H.~D. Nguyen, ``Multi-agent collaboration mechanisms: A survey of llms,'' \emph{arXiv preprint arXiv:2501.06322}, Jan 2025, [Online]. Available: https://arxiv.org/abs/2501.06322. [Accessed: Mar. 14, 2025].
 
 \bibitem{silver2016mastering}
-D.~Silver, A.~Huang, C.~J. Maddison, A.~Guez, L.~Sifre, G.~van~den Driessche,
-  J.~Schrittwieser, I.~Antonoglou, V.~Panneershelvam, M.~Lanctot, S.~Dieleman,
-  D.~Grewe, J.~Nham, N.~Kalchbrenner, I.~Sutskever, T.~Lillicrap, M.~Leach,
-  K.~Kavukcuoglu, T.~Graepel, and D.~Hassabis, ``Mastering the game of go with
-  deep neural networks and tree search,'' \emph{Nature}, vol. 529, no. 7587,
-  pp. 484--489, 2016, [Online]. Available:
-  https://www.nature.com/articles/nature16961. [Accessed: Mar. 14, 2025].
+D.~Silver, A.~Huang, C.~J. Maddison, A.~Guez, L.~Sifre, G.~van~den Driessche, J.~Schrittwieser, I.~Antonoglou, V.~Panneershelvam, M.~Lanctot, S.~Dieleman, D.~Grewe, J.~Nham, N.~Kalchbrenner, I.~Sutskever, T.~Lillicrap, M.~Leach, K.~Kavukcuoglu, T.~Graepel, and D.~Hassabis, ``Mastering the game of go with deep neural networks and tree search,'' \emph{Nature}, vol. 529, no. 7587, pp. 484--489, 2016, [Online]. Available: https://www.nature.com/articles/nature16961. [Accessed: Mar. 14, 2025].
 
 \bibitem{openai2019dota}
-OpenAI, C.~Berner, G.~Brockman, B.~Chan, V.~Cheung, P.~D\k{e}biak, C.~Dennison,
-  D.~Farhi, Q.~Fischer, S.~Hashme, C.~Hesse, R.~J\'{o}zefowicz, S.~Gray,
-  C.~Olsson, J.~Pachocki, M.~Petrov, H.~P. de~Oliveira~Pinto, J.~Raiman,
-  T.~Salimans, J.~Schlatter, J.~Schneider, S.~Sidor, I.~Sutskever, J.~Tang,
-  F.~Wolski, and S.~Zhang, ``Dota 2 with large scale deep reinforcement
-  learning,'' \emph{arXiv preprint arXiv:1912.06680}, Dec 2019, [Online].
-  Available: https://arxiv.org/abs/1912.06680. [Accessed: Mar. 14, 2025].
+OpenAI, C.~Berner, G.~Brockman, B.~Chan, V.~Cheung, P.~D\k{e}biak, C.~Dennison, D.~Farhi, Q.~Fischer, S.~Hashme, C.~Hesse, R.~J\'{o}zefowicz, S.~Gray, C.~Olsson, J.~Pachocki, M.~Petrov, H.~P. de~Oliveira~Pinto, J.~Raiman, T.~Salimans, J.~Schlatter, J.~Schneider, S.~Sidor, I.~Sutskever, J.~Tang, F.~Wolski, and S.~Zhang, ``Dota 2 with large scale deep reinforcement learning,'' \emph{arXiv preprint arXiv:1912.06680}, Dec 2019, [Online]. Available: https://arxiv.org/abs/1912.06680. [Accessed: Mar. 14, 2025].
 
 \bibitem{zhang2024xlam}
-J.~Zhang, T.~Lan, M.~Zhu, Z.~Liu, T.~Hoang, S.~Kokane, W.~Yao, J.~Tan,
-  A.~Prabhakar, H.~Chen, Z.~Liu, Y.~Feng, T.~Awalgaonkar, R.~Murthy, E.~Hu,
-  Z.~Chen, R.~Xu, J.~C. Niebles, S.~Heinecke, H.~Wang, S.~Savarese, and
-  C.~Xiong, ``xlam: A family of large action models to empower ai agent
-  systems,'' \emph{arXiv preprint arXiv:2409.03215}, Sep 2024, [Online].
-  Available: https://arxiv.org/abs/2409.03215. [Accessed: Mar. 14, 2025].
+J.~Zhang, T.~Lan, M.~Zhu, Z.~Liu, T.~Hoang, S.~Kokane, W.~Yao, J.~Tan, A.~Prabhakar, H.~Chen, Z.~Liu, Y.~Feng, T.~Awalgaonkar, R.~Murthy, E.~Hu, Z.~Chen, R.~Xu, J.~C. Niebles, S.~Heinecke, H.~Wang, S.~Savarese, and C.~Xiong, ``xlam: A family of large action models to empower ai agent systems,'' \emph{arXiv preprint arXiv:2409.03215}, Sep 2024, [Online]. Available: https://arxiv.org/abs/2409.03215. [Accessed: Mar. 14, 2025].
 
 \bibitem{brohan2023rt2}
-A.~Brohan, N.~Brown, J.~Carbajal, Y.~Chebotar, X.~Chen, K.~Choromanski,
-  T.~Ding, D.~Driess, A.~Dubey, C.~Finn, P.~Florence, C.~Fu,
-  M.~Gonzalez~Arenas, K.~Gopalakrishnan, K.~Han, K.~Hausman, A.~Herzog, J.~Hsu,
-  B.~Ichter, A.~Irpan, N.~Joshi, R.~Julian, D.~Kalashnikov, Y.~Kuang, I.~Leal,
-  L.~Lee, T.-W.~E. Lee, S.~Levine, Y.~Lu, H.~Michalewski, I.~Mordatch,
-  K.~Pertsch, K.~Rao, K.~Reymann, M.~Ryoo, G.~Salazar, P.~Sanketi, P.~Sermanet,
-  J.~Singh, A.~Singh, R.~Soricut, H.~Tran, V.~Vanhoucke, Q.~Vuong, A.~Wahid,
-  S.~Welker, P.~Wohlhart, J.~Wu, F.~Xia, T.~Xiao, P.~Xu, S.~Xu, T.~Yu, and
-  B.~Zitkovich, ``Rt-2: Vision-language-action models transfer web knowledge to
-  robotic control,'' \emph{arXiv preprint arXiv:2307.15818}, Jul 2023,
-  [Online]. Available: https://arxiv.org/abs/2307.15818. [Accessed: Mar. 14,
-  2025].
+A.~Brohan, N.~Brown, J.~Carbajal, Y.~Chebotar, X.~Chen, K.~Choromanski, T.~Ding, D.~Driess, A.~Dubey, C.~Finn, P.~Florence, C.~Fu, M.~Gonzalez~Arenas, K.~Gopalakrishnan, K.~Han, K.~Hausman, A.~Herzog, J.~Hsu, B.~Ichter, A.~Irpan, N.~Joshi, R.~Julian, D.~Kalashnikov, Y.~Kuang, I.~Leal, L.~Lee, T.-W.~E. Lee, S.~Levine, Y.~Lu, H.~Michalewski, I.~Mordatch, K.~Pertsch, K.~Rao, K.~Reymann, M.~Ryoo, G.~Salazar, P.~Sanketi, P.~Sermanet, J.~Singh, A.~Singh, R.~Soricut, H.~Tran, V.~Vanhoucke, Q.~Vuong, A.~Wahid, S.~Welker, P.~Wohlhart, J.~Wu, F.~Xia, T.~Xiao, P.~Xu, S.~Xu, T.~Yu, and B.~Zitkovich, ``Rt-2: Vision-language-action models transfer web knowledge to robotic control,'' \emph{arXiv preprint arXiv:2307.15818}, Jul 2023, [Online]. Available: https://arxiv.org/abs/2307.15818. [Accessed: Mar. 14, 2025].
 
 \bibitem{reed2022generalist}
-S.~Reed, K.~Żołna, E.~Parisotto, S.~Gómez~Colmenarejo, A.~Novikov,
-  G.~Barth-Maron, M.~Giménez, Y.~Sulsky, J.~Kay, J.~T. Springenberg,
-  T.~Eccles, J.~Bruce, A.~Razavi, A.~Edwards, N.~Heess, Y.~Chen, R.~Hadsell,
-  O.~Vinyals, M.~Bordbar, and N.~de~Freitas, ``A generalist agent,''
-  \emph{arXiv preprint arXiv:2205.06175}, May 2022, [Online]. Available:
-  https://arxiv.org/abs/2205.06175. [Accessed: Mar. 14, 2025].
+S.~Reed, K.~Żołna, E.~Parisotto, S.~Gómez~Colmenarejo, A.~Novikov, G.~Barth-Maron, M.~Giménez, Y.~Sulsky, J.~Kay, J.~T. Springenberg, T.~Eccles, J.~Bruce, A.~Razavi, A.~Edwards, N.~Heess, Y.~Chen, R.~Hadsell, O.~Vinyals, M.~Bordbar, and N.~de~Freitas, ``A generalist agent,'' \emph{arXiv preprint arXiv:2205.06175}, May 2022, [Online]. Available: https://arxiv.org/abs/2205.06175. [Accessed: Mar. 14, 2025].
 
 \bibitem{driess2023palme}
-D.~Driess, F.~Xia, M.~S.~M. Sajjadi, C.~Lynch, A.~Chowdhery, B.~Ichter,
-  A.~Wahid, J.~Tompson, Q.~Vuong, T.~Yu, W.~Huang, Y.~Chebotar, P.~Sermanet,
-  D.~Duckworth, S.~Levine, V.~Vanhoucke, K.~Hausman, M.~Toussaint, K.~Greff,
-  A.~Zeng, I.~Mordatch, and P.~Florence, ``Palm-e: An embodied multimodal
-  language model,'' \emph{arXiv preprint arXiv:2303.03378}, Mar 2023, [Online].
-  Available: https://arxiv.org/abs/2303.03378. [Accessed: Mar. 14, 2025].
+D.~Driess, F.~Xia, M.~S.~M. Sajjadi, C.~Lynch, A.~Chowdhery, B.~Ichter, A.~Wahid, J.~Tompson, Q.~Vuong, T.~Yu, W.~Huang, Y.~Chebotar, P.~Sermanet, D.~Duckworth, S.~Levine, V.~Vanhoucke, K.~Hausman, M.~Toussaint, K.~Greff, A.~Zeng, I.~Mordatch, and P.~Florence, ``Palm-e: An embodied multimodal language model,'' \emph{arXiv preprint arXiv:2303.03378}, Mar 2023, [Online]. Available: https://arxiv.org/abs/2303.03378. [Accessed: Mar. 14, 2025].
 
 \bibitem{liu2024deepseekv3}
-A.~Liu, B.~Feng, B.~Xue, B.~Wang, B.~Wu, C.~Lu, C.~Zhao, C.~Deng, C.~Zhang,
-  D.~Dai, D.~Chen, D.~Guo, D.~Yang, F.~Zhang, G.~Chen, H.~Gao, H.~Yang,
-  H.~Ding, J.~Li, J.~Wang, K.~Dong, K.~Yu, L.~Zhang, L.~Zhou, M.~Sun, P.~Wang,
-  Q.~Zhu, R.~Xu, S.~Ma, S.~Chen, W.~Zeng, X.~Bi, X.~Wu, X.~Yu, Y.~Wu, Y.~Li,
-  Y.~Zhang, Y.~Feng, Y.~Lin, Z.~Shao, and Z.~Liu, ``Deepseek-v3 technical
-  report,'' \emph{arXiv preprint arXiv:2412.19437}, Dec 2024, [Online].
-  Available: https://arxiv.org/abs/2412.19437. [Accessed: Mar. 17, 2025].
+A.~Liu, B.~Feng, B.~Xue, B.~Wang, B.~Wu, C.~Lu, C.~Zhao, C.~Deng, C.~Zhang, D.~Dai, D.~Chen, D.~Guo, D.~Yang, F.~Zhang, G.~Chen, H.~Gao, H.~Yang, H.~Ding, J.~Li, J.~Wang, K.~Dong, K.~Yu, L.~Zhang, L.~Zhou, M.~Sun, P.~Wang, Q.~Zhu, R.~Xu, S.~Ma, S.~Chen, W.~Zeng, X.~Bi, X.~Wu, X.~Yu, Y.~Wu, Y.~Li, Y.~Zhang, Y.~Feng, Y.~Lin, Z.~Shao, and Z.~Liu, ``Deepseek-v3 technical report,'' \emph{arXiv preprint arXiv:2412.19437}, Dec 2024, [Online]. Available: https://arxiv.org/abs/2412.19437. [Accessed: Mar. 17, 2025].
 
 \end{thebibliography}
