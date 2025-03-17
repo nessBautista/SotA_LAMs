@@ -235,15 +235,17 @@ In our research, we noticed significant enthusiasm for agentic systems across va
 These systems ensure AI agents collaborate in an organized and effective manner. We expect to see more solutions addressing this key challenge in the coming year. It's worth noting Anthropic's Model Context Protocol (MCP) which, despite lacking academic publication, demonstrates promising adoption and usability in addressing the previously discussed challenges.
 
 \subsection{Applications and Use Cases}
-Recent advances in AI systems have led to practical applications across various domains. The evolution from LLMs to LAMs and beyond has created a rich ecosystem of specialized models with distinct capabilities:
-Large Action Models (LAMs)
-LAMs have emerged as powerful tools for structured decision-making environments. These models typically consist of a state encoder for processing structured input, a policy network for generating actions, and a value network to estimate expected rewards. Notable examples include:
+The systems we have examined throughout this paper, while displaying significant advancement over time, consistently employ a three-component architecture for information processing and decision-making:
 
-xLAM – A Family of Large Action Models: The xLAM series, pioneered by Salesforce, exemplifies how LAMs can empower AI agent systems \cite{zhang2024xlam}. These models, spanning various sizes and architectures, have demonstrated excellence in executing real-world tasks, including tool use and interactive operations.
-Game AI Systems: DeepMind's AlphaGo was the first AI to defeat a human champion at Go, utilizing deep neural networks with Monte Carlo Tree Search (MCTS) to evaluate board states and optimize long-term strategies \cite{silver2016mastering}.
-Complex Game Environments: OpenAI Five leveraged self-play and Proximal Policy Optimization to master the multiplayer game Dota 2, demonstrating LAMs' ability to handle complex, dynamic environments with multiple agents \cite{openai2019dota}.
-Autonomous Driving: Companies like Waymo employ convolutional neural networks to interpret sensor data (LIDAR, cameras) alongside reinforcement learning-based planning frameworks to produce driving behaviors \cite{bojarski2016end}. Similarly, Tesla's Full Self-Driving system utilizes transformer-based neural networks that process multiple input streams simultaneously to make real-time driving decisions \cite{lambert2023tesla}. 
+\begin{enumerate}
+    \item A state encoder that processes structured input
+    \item A policy network that generates appropriate actions
+    \item A value network that evaluates the potential outcome of those actions
+\end{enumerate}
 
+This architectural approach has enabled breakthrough applications across several domains. In strategic gaming, DeepMind's AlphaGo achieved a historic milestone as the first AI system to defeat a human champion at Go, combining advanced neural networks with Monte Carlo Tree Search (MCTS) to evaluate board positions and optimize complex strategies \cite{silver2016mastering}. Extending these capabilities, OpenAI Five mastered the multiplayer game Dota 2 through self-play and Proximal Policy Optimization, demonstrating how these systems can effectively handle dynamic environments with multiple interacting agents \cite{openai2019dota}.
+
+More recently, Salesforce has brought these capabilities into the commercial sphere with its xLAM series—a family of Large Action Models designed for practical applications \cite{zhang2024xlam}. These models, available in various sizes and configurations, demonstrate exceptional proficiency in executing real-world tasks through effective tool utilization and interactive operations, representing a significant step toward consumer-oriented implementations of this technology.
 \section{Future Directions} 
 
 
