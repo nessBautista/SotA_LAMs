@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  16 MAR 2025 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  16 MAR 2025 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -112,6 +112,16 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
+(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/fonten
+c.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+2.
+
+(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/t1pt
+m.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsmath/ams
 math.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
@@ -317,20 +327,20 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
 
 -- Lines per column: 58 (exact).
 
@@ -361,23 +371,23 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count300
-LaTeX Font Info:    Trying to load font information for U+msa on input line 97.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
 
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/um
 sa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
 
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/um
 sb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1655) in paragraph at lines 106--107
-\OT1/ptm/m/n/10 former ar-chi-tec-ture. This in-no-va-tion en-abled com-mer-cia
-l
+Underfull \hbox (badness 1655) in paragraph at lines 107--108
+\T1/ptm/m/n/10 former ar-chi-tec-ture. This in-no-va-tion en-abled com-mer-cial
+
  []
 
 [1{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/up
@@ -386,47 +396,38 @@ dmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts
 
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-39.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
+0.
 
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/ot1p
-cr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/t1pc
+r.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 1
-40.
-
-(/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/omsp
-cr.fd
-File: omspcr.fd 
-)
-LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
 <traning_phases.pdf, id=10, 794.97pt x 614.295pt>
 File: traning_phases.pdf Graphic file (type pdf)
 <use traning_phases.pdf>
-Package pdftex.def Info: traning_phases.pdf  used on input line 162.
+Package pdftex.def Info: traning_phases.pdf  used on input line 163.
 (pdftex.def)             Requested size: 258.0pt x 199.3623pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 162--163
+Overfull \hbox (6.0pt too wide) in paragraph at lines 163--164
  [][] 
  []
 
 [2 <./traning_phases.pdf, page is rotated 90 degrees>]
-<lams_diagram.pdf, id=22, 794.97pt x 614.295pt>
+<lams_diagram.pdf, id=21, 794.97pt x 614.295pt>
 File: lams_diagram.pdf Graphic file (type pdf)
 <use lams_diagram.pdf>
-Package pdftex.def Info: lams_diagram.pdf  used on input line 214.
+Package pdftex.def Info: lams_diagram.pdf  used on input line 215.
 (pdftex.def)             Requested size: 258.0pt x 102.00078pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 214--215
+Overfull \hbox (6.0pt too wide) in paragraph at lines 215--216
  [][] 
  []
 
 [3 <./lams_diagram.pdf, page is rotated 90 degrees>] [4] (./main.bbl [5]
 Overfull \hbox (276.45197pt too wide) in paragraph at lines 67--75
-\OT1/ptm/m/n/8 https://github.com/tpn/pdfs/blob/master/Mastering%20the%20Game%2
-0of%20Go%20with%20Deep%20Neural%20Networks%20and%20Tree%20Search.pdf.
+\T1/ptm/m/n/8 https://github.com/tpn/pdfs/blob/master/Mastering%20the%20Game%20
+of%20Go%20with%20Deep%20Neural%20Networks%20and%20Tree%20Search.pdf.
  []
 
 ) [6
@@ -438,27 +439,26 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5935 strings out of 474116
- 91236 string characters out of 5732612
+ 6190 strings out of 474116
+ 93454 string characters out of 5732612
  2033187 words of memory out of 5000000
- 28239 multiletter control sequences out of 15000+600000
- 591822 words of font info for 94 fonts, out of 8000000 for 9000
+ 28488 multiletter control sequences out of 15000+600000
+ 647885 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,1058b,1604s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/Cellar/texlive/20240312
-_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></opt/homebrew/Cel
-lar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></op
-t/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/times/utm
-b8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/u
-rw/times/utmbi8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/
-fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share
-/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 297147 bytes).
+_3/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></opt/homebrew/Cellar/te
+xlive/20240312_3/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/homebr
+ew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
+></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/time
+s/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/ty
+pe1/urw/times/utmri8a.pfb>
+Output written on main.pdf (6 pages, 289737 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
