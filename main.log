@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  17 MAR 2025 14:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  17 MAR 2025 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -375,27 +375,43 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count300
-LaTeX Font Info:    Trying to load font information for U+msa on input line 105
-.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 89.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
+
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/um
 sa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 105
-.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
+
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/um
 sb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/
-updmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fon
-ts/enc/dvips/base/8r.enc}
+)
+Overfull \hbox (3.35559pt too wide) in paragraph at lines 89--89
+ [][] 
+ []
+
+
+Overfull \hbox (3.35559pt too wide) in paragraph at lines 89--89
+ [][] 
+ []
+
+
+Overfull \hbox (3.35559pt too wide) in paragraph at lines 89--89
+ [][] 
+ []
+
+[1{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/up
+dmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts
+/enc/dvips/base/8r.enc}
 
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
-3.
+8.
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/t1pc
 r.fd
@@ -404,10 +420,10 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 <traning_phases.pdf, id=10, 794.97pt x 614.295pt>
 File: traning_phases.pdf Graphic file (type pdf)
 <use traning_phases.pdf>
-Package pdftex.def Info: traning_phases.pdf  used on input line 166.
+Package pdftex.def Info: traning_phases.pdf  used on input line 171.
 (pdftex.def)             Requested size: 258.0pt x 199.3623pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 166--167
+Overfull \hbox (6.0pt too wide) in paragraph at lines 171--172
  [][] 
  []
 
@@ -415,10 +431,10 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 166--167
 <lams_diagram.pdf, id=21, 794.97pt x 614.295pt>
 File: lams_diagram.pdf Graphic file (type pdf)
 <use lams_diagram.pdf>
-Package pdftex.def Info: lams_diagram.pdf  used on input line 215.
+Package pdftex.def Info: lams_diagram.pdf  used on input line 220.
 (pdftex.def)             Requested size: 258.0pt x 102.00078pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 215--216
+Overfull \hbox (6.0pt too wide) in paragraph at lines 220--221
  [][] 
  []
 
@@ -430,13 +446,13 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 6276 strings out of 474116
- 94748 string characters out of 5732612
+ 6307 strings out of 474116
+ 95208 string characters out of 5732612
  2032187 words of memory out of 5000000
- 28570 multiletter control sequences out of 15000+600000
- 647885 words of font info for 125 fonts, out of 8000000 for 9000
+ 28597 multiletter control sequences out of 15000+600000
+ 651632 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,1120b,1604s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,11n,65p,1120b,1604s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/Cellar/texlive/20240312
@@ -446,7 +462,7 @@ ew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
 ></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 288374 bytes).
+Output written on main.pdf (5 pages, 288671 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
