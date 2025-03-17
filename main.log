@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  17 MAR 2025 12:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  17 MAR 2025 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -375,21 +375,21 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count300
-LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 103
+.
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/um
 sa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 99.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 103
+.
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/um
 sb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1655) in paragraph at lines 108--109
+Underfull \hbox (badness 1655) in paragraph at lines 112--113
 \T1/ptm/m/n/10 former ar-chi-tec-ture. This in-no-va-tion en-abled com-mer-cial
 
  []
@@ -401,7 +401,7 @@ dmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
-1.
+5.
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/t1pc
 r.fd
@@ -410,10 +410,10 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 <traning_phases.pdf, id=10, 794.97pt x 614.295pt>
 File: traning_phases.pdf Graphic file (type pdf)
 <use traning_phases.pdf>
-Package pdftex.def Info: traning_phases.pdf  used on input line 164.
+Package pdftex.def Info: traning_phases.pdf  used on input line 168.
 (pdftex.def)             Requested size: 258.0pt x 199.3623pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 164--165
+Overfull \hbox (6.0pt too wide) in paragraph at lines 168--169
  [][] 
  []
 
@@ -421,10 +421,10 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 164--165
 <lams_diagram.pdf, id=21, 794.97pt x 614.295pt>
 File: lams_diagram.pdf Graphic file (type pdf)
 <use lams_diagram.pdf>
-Package pdftex.def Info: lams_diagram.pdf  used on input line 216.
+Package pdftex.def Info: lams_diagram.pdf  used on input line 220.
 (pdftex.def)             Requested size: 258.0pt x 102.00078pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 216--217
+Overfull \hbox (6.0pt too wide) in paragraph at lines 220--221
  [][] 
  []
 
@@ -455,7 +455,7 @@ ew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
 ></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 288758 bytes).
+Output written on main.pdf (5 pages, 288740 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
