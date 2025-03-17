@@ -111,4 +111,13 @@ D.~Driess, F.~Xia, M.~S.~M. Sajjadi, C.~Lynch, A.~Chowdhery, B.~Ichter,
   language model,'' \emph{arXiv preprint arXiv:2303.03378}, Mar 2023, [Online].
   Available: https://arxiv.org/abs/2303.03378. [Accessed: Mar. 14, 2025].
 
+\bibitem{liu2024deepseekv3}
+A.~Liu, B.~Feng, B.~Xue, B.~Wang, B.~Wu, C.~Lu, C.~Zhao, C.~Deng, C.~Zhang,
+  D.~Dai, D.~Chen, D.~Guo, D.~Yang, F.~Zhang, G.~Chen, H.~Gao, H.~Yang,
+  H.~Ding, J.~Li, J.~Wang, K.~Dong, K.~Yu, L.~Zhang, L.~Zhou, M.~Sun, P.~Wang,
+  Q.~Zhu, R.~Xu, S.~Ma, S.~Chen, W.~Zeng, X.~Bi, X.~Wu, X.~Yu, Y.~Wu, Y.~Li,
+  Y.~Zhang, Y.~Feng, Y.~Lin, Z.~Shao, and Z.~Liu, ``Deepseek-v3 technical
+  report,'' \emph{arXiv preprint arXiv:2412.19437}, Dec 2024, [Online].
+  Available: https://arxiv.org/abs/2412.19437. [Accessed: Mar. 17, 2025].
+
 \end{thebibliography}
