@@ -126,15 +126,11 @@ Expanding this line of research, ToolLLM (Qin et al., 2023)~\cite{qin2023toolllm
 These complementary innovations represents a first step in improving the reliability of AI systems for performing specific tasks by establishing a new paradigm where language models can handle tasks beyond linguistics to perform useful, real-world operations. By using its abilities for language understanding while gaining access to specialized functionality, tool-augmented systems offer a cost-effective approach to enhancing model capabilities without increasing model size, showing potential for transforming how AI assistants support human productivity across diverse domains.
 
 \subsection{Large Action Models (LAMs)}
-
-Tool-using LLMs introduced a paradigm shift in the way we perceive the functionality of AI systems, the main idea was: "Now we have a system that can interact with our world",  in the context of our modern digital productivity tools. Taking a step further in the evolution of  an LLM using tools, our research found the concept of "Large Action Models" which introduces a new action layer that positions AI systems at the same level of interaction as modern application layers. This advancement has produced systems capable of performing actions in dynamic environments. Although LAMs did not require significant architectural changes to LLMs, the name effectively captured the new direction of applied AI. We now proceed to describe this process.
-
-\subsubsection{Developing and Training Large Action Models}
-
-The goal is to transform a general-purpose LLM into a specialized action execution system. This transformation requires designing a dedicated pipeline. Wang et al.~\cite{wang2025lam} describe this process in detail. Understanding this pipeline is important not only for this paper but also because these methods can be applied broadly to similar objectives, enriching our understanding for future development. The process consists of several interconnected stages:
+Tool-using LLMs introduced a paradigm shift in how we perceive AI systems' functionality. The breakthrough concept was simple yet powerful: "Now we have a system that can interact with our world", specifically within the context of modern digital productivity tools. Taking a step further in the evolution of  an LLM using tools, our research found the concept of "Large Action Models" which introduces a new action layer that positions AI systems at the same level of interaction as modern application layers. This advancement has produced systems capable of performing actions in dynamic environments. Although LAMs did not require significant architectural changes to LLMs, the name effectively captured the new direction of applied AI. We now proceed to describe this process.
+To transform a general-purpose LLM into a specialized action execution system, a dedicated pipeline is required. Wang et al.~\cite{wang2025lam} detail this process comprehensively. Understanding this pipeline is important, not just for this paper, but because these methods can be broadly applied to similar objectives, deepening our understanding for future development. The process comprises several interconnected stages, which we will now explain:
 
 \paragraph{Data Collection and Preparation}
-As most of AI related work, everything starts with gathering and curating task-specific data. This initial phase follows a two-phase approach:
+As with most AI related work, everything starts with gathering and curating task-specific data. This initial phase follows a two-phase approach:
 
 \begin{itemize}
     \item \textbf{Task-Plan Data Collection}: This involves collecting user requests and corresponding step-by-step plans. Sources include application documentation, WikiHow articles, and historical search queries. Each entry typically contains a task description and a detailed plan outlining the steps required to accomplish it.
@@ -179,7 +175,7 @@ Wang et al.~\cite{wang2025lam} propose a systematic, four-phase training process
     
     \item \textbf{Learning from Experts}: In the second phase, the model (LAM$^2$) learns to translate plans into concrete, executable actions through expert demonstrations. Training uses state-action pairs where each state includes the current UI environment and task context, and each action specifies which control to interact with and how. This phase grounds the model's reasoning in real application environments.
     
-    \item \textbf{Self-Boosting Exploration}: In the third phase, the system learns to improve itself. LAM$^2$ attempts to solve tasks that were unsuccessful in previous stages. Using a ReAct mechanism, \cite{yao2022react}, it interacts with the environment and explores alternative strategies for these challenging tasks. When successful, it generates new solutions. These solutions are then combined with the original expert examples to create an enhanced training dataset for LAM$^3$.
+    \item \textbf{Self-Boosting Exploration}: In the third phase, the system learns to improve itself. LAM$^2$ attempts to solve tasks that were unsuccessful in previous stages. Using a ReAct mechanism \cite{yao2022react}, it interacts with the environment and explores alternative strategies for these challenging tasks. When successful, it generates new solutions. These solutions are then combined with the original expert examples to create an enhanced training dataset for LAM$^3$.
     
     \item \textbf{Learning from a Reward Model}: The final phase introduces reinforcement learning, enabling the model to learn from both successes and failures. First, a reward model is trained on both successful and failed trajectories, assigning positive values to successful steps and negative values to failures. Then, LAM$^4$ is fine-tuned using Proximal Policy Optimization (PPO) on previously failed trajectories, guided by the reward model's feedback. This approach enhances the model's decision-making abilities in complex scenarios.
 \end{enumerate}
@@ -187,7 +183,7 @@ Wang et al.~\cite{wang2025lam} propose a systematic, four-phase training process
 Each step in the training process builds on the one before it. This creates AI systems that get better and better at four key things: Planning out steps to solve problems, learning from expert examples, figuring things out on their own, getting better through trial and error.
 
 \paragraph{Integration with Agents}
-Once the trained is complete, it is neccessary to close the breach between strategy and execution. In few words, we have a very capable model to engage in planning to resolve tasks, but it's necessary to add interaction with the environment where it will operate. We introduce the concept of Agents—though their meaning and specific definition are still evolving—which, in the context of this paper, represent a layer of interaction between LAMs and the environment. LAMs must be integrated into an agent framework to interact with real-world environments. To make LAMs work in the real world, they need four main parts working together:
+Once the training is complete, it is necessary to close the breach between strategy and execution. In few words, we have a very capable model to engage in planning to resolve tasks, but it's necessary to add interaction with the environment where it will operate. We introduce the concept of Agents—though their meaning and specific definition are still evolving—which, in the context of this paper, represent a layer of interaction between LAMs and the environment. LAMs must be integrated into an agent framework to interact with real-world environments. To make LAMs work in the real world, they need four main parts working together:
 
 \begin{enumerate}
     \item A way to see and understand what's happening in their environment, usually through special software interfaces (UI Automation APIs)
@@ -199,19 +195,16 @@ Once the trained is complete, it is neccessary to close the breach between strat
 Put simply, the LAM functions as the brain while the Agents serve as the body, complete with hands that can manipulate tools and execute plans.
 
 \paragraph{Evaluation}
-Evaluation is a critical component of any DL/ML system, serving as the feedback loop for system improvement. While Wang and colleagues~\cite{wang2025lam} established clear testing methodologies for comparing different versions and ensuring proper functionality across various situations, the current evaluation scope remains limited to a 435-task benchmark focused on Microsoft Word tasks. Nevertheless, their comprehensive development pipeline demonstrates LAMs' ability to translate user intentions into meaningful actions within specific operational contexts, representing a significant advancement over traditional text-generation models by enabling the execution of complex, multi-step tasks in real-world environments—though more extensive testing across diverse domains is still needed.
+Evaluation is a critical component of any DL/ML system, serving as the feedback loop for system improvement. While Wang and colleagues~\cite{wang2025lam} established clear testing methodologies for comparing different versions and ensuring proper functionality across various situations, the current evaluation scope remains limited to a 435-task benchmark focused on Microsoft Word tasks. Nevertheless, their comprehensive development pipeline demonstrates LAMs' ability to translate user intentions into meaningful actions within specific operational contexts, representing a utility advancement over traditional text-generation models by enabling the execution of complex, multi-step tasks in real-world environments—though more extensive testing across diverse domains is still needed.
 
-\subsubsection{Applications and Impact}
 LAMs enable a wide range of applications previously challenging for traditional LLMs, including:
 
 \begin{itemize}
-    \item Autonomous interaction with software applications and operating systems
-    \item Control of physical devices and robotic systems
-    \item Complex task automation in specialized domains like healthcare or finance
+    \item Autonomous interaction with Operating Systems through CLI interfaces.
+    \item Control of User Interfaces which are present in most of the software applications.
+    \item The potential for complex task automation in specialized domains.
     \item Multi-step problem-solving that requires environmental awareness
 \end{itemize}
-
-These capabilities mark a significant advancement toward artificial general intelligence (AGI), enabling AI systems to automate tasks that were previously only possible with human intervention.
 
 LAMs thus represent a paradigm shift—from language generation to action execution—allowing AI systems to automate complex processes with minimal human intervention, substantially expanding their practical utility across numerous domains.
 

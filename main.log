@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  17 MAR 2025 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  17 MAR 2025 13:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -395,7 +395,7 @@ ts/enc/dvips/base/8r.enc}
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
-7.
+3.
 
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/psnfss/t1pc
 r.fd
@@ -404,10 +404,10 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 <traning_phases.pdf, id=10, 794.97pt x 614.295pt>
 File: traning_phases.pdf Graphic file (type pdf)
 <use traning_phases.pdf>
-Package pdftex.def Info: traning_phases.pdf  used on input line 170.
+Package pdftex.def Info: traning_phases.pdf  used on input line 166.
 (pdftex.def)             Requested size: 258.0pt x 199.3623pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 170--171
+Overfull \hbox (6.0pt too wide) in paragraph at lines 166--167
  [][] 
  []
 
@@ -415,10 +415,10 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 170--171
 <lams_diagram.pdf, id=21, 794.97pt x 614.295pt>
 File: lams_diagram.pdf Graphic file (type pdf)
 <use lams_diagram.pdf>
-Package pdftex.def Info: lams_diagram.pdf  used on input line 222.
+Package pdftex.def Info: lams_diagram.pdf  used on input line 215.
 (pdftex.def)             Requested size: 258.0pt x 102.00078pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 222--223
+Overfull \hbox (6.0pt too wide) in paragraph at lines 215--216
  [][] 
  []
 
@@ -446,7 +446,7 @@ ew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
 ></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 288771 bytes).
+Output written on main.pdf (5 pages, 288539 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
