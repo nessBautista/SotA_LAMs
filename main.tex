@@ -233,7 +233,7 @@ In our research, we noticed significant enthusiasm for agentic systems across va
 
 These systems ensure AI agents collaborate in an organized and effective manner. We expect to see more solutions addressing this key challenge in the coming year. It's worth noting Anthropic's Model Context Protocol (MCP) which, despite lacking academic publication, demonstrates promising adoption and usability in addressing the previously discussed challenges.
 \subsection{Applications and Use Cases}
-The systems we have examined throughout this paper, while displaying significant advancement over time, consistently employ a three-component architecture for information processing and decision-making:
+Let's pause to examine some key characteristics of the systems reviewed in this paper. While showing significant advancement over time, these systems consistently employ a three-component architecture for information processing and decision-making:
 
 \begin{enumerate}
     \item A state encoder that processes structured input
@@ -241,7 +241,8 @@ The systems we have examined throughout this paper, while displaying significant
     \item A value network that evaluates the potential outcome of those actions
 \end{enumerate}
 
-This architectural approach has enabled breakthrough applications across several domains. In strategic gaming, DeepMind's AlphaGo achieved a historic milestone as the first AI system to defeat a human champion at Go, combining advanced neural networks with Monte Carlo Tree Search (MCTS) to evaluate board positions and optimize complex strategies \cite{silver2016mastering}. Extending these capabilities, OpenAI Five mastered the multiplayer game Dota 2 through self-play and Proximal Policy Optimization, demonstrating how these systems can effectively handle dynamic environments with multiple interacting agents \cite{openai2019dota}.
+Through this lens, we would briefly like to present some applications and use cases across several domains that highlight the usage of these components.
+In strategic gaming, DeepMind's AlphaGo achieved a historic milestone as the first AI system to defeat a human champion at Go, combining advanced neural networks with Monte Carlo Tree Search (MCTS) to evaluate board positions and optimize complex strategies \cite{silver2016mastering}. Extending these capabilities, OpenAI Five mastered the multiplayer game Dota 2 through self-play and Proximal Policy Optimization, demonstrating how these systems can effectively handle dynamic environments with multiple interacting agents \cite{openai2019dota}.
 
 More recently, Salesforce has brought these capabilities into the commercial sphere with its xLAM series—a family of Large Action Models designed for practical applications \cite{zhang2024xlam}. These models, available in various sizes and configurations, demonstrate exceptional proficiency in executing real-world tasks through effective tool utilization and interactive operations, representing a significant step toward consumer-oriented implementations of this technology.
 \section{Future Directions} 

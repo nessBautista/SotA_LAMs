@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  17 MAR 2025 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  17 MAR 2025 13:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -446,7 +446,7 @@ ew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
 ></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 288292 bytes).
+Output written on main.pdf (5 pages, 288399 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream

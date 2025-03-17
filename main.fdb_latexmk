@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1742238954.14597 "main.aux" "main.bbl" "main" 1742240155.31183 0
+["bibtex main"] 1742238954.14597 "main.aux" "main.bbl" "main" 1742240828.56875 0
   "./references.bib" 1742233832.67883 9275 ad939b8c62dba1024f419898120a0110 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1710106625 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1742240155.1604 2751 81941a0c2f972e63eef9b2fb6a6e091e "pdflatex"
+  "main.aux" 1742240828.41013 2751 81941a0c2f972e63eef9b2fb6a6e091e "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1742240154.74089 "/Users/ness/Workspace/SotA_LAMs/main.tex" "main.pdf" "main" 1742240155.31194 0
-  "/Users/ness/Workspace/SotA_LAMs/main.tex" 1742240154.53293 27016 ba6a5942e7b3f0aeee1d7b80b57134db ""
+["pdflatex"] 1742240827.97495 "/Users/ness/Workspace/SotA_LAMs/main.tex" "main.pdf" "main" 1742240828.56887 0
+  "/Users/ness/Workspace/SotA_LAMs/main.tex" 1742240827.75356 27125 e09b22a3eb3e4e8ffac33c877c63d396 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1710106625 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/fontname/texfonts.map" 1710106625 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1710106625 5472554 f7861620179a71a79d4bd86251f559d0 ""
@@ -85,9 +85,9 @@
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1710106625 8221880 586024644079ee3bb0c221d6d52d1611 ""
   "IEEEtran.cls" 1732556894 288451 2ca944e3837f3f55e325ddfd2f1a2479 ""
   "lams_diagram.pdf" 1741977980.72099 36325 0b7bd0d64fa543af316186eb8b01c00b ""
-  "main.aux" 1742240155.1604 2751 81941a0c2f972e63eef9b2fb6a6e091e "pdflatex"
-  "main.bbl" 1742239253.77739 6524 21e293f480bcef214a19cf22bdcb1647 "bibtex main"
-  "main.tex" 1742240154.53293 27016 ba6a5942e7b3f0aeee1d7b80b57134db ""
+  "main.aux" 1742240828.41013 2751 81941a0c2f972e63eef9b2fb6a6e091e "pdflatex"
+  "main.bbl" 1742240159.72873 6524 21e293f480bcef214a19cf22bdcb1647 "bibtex main"
+  "main.tex" 1742240827.75356 27125 e09b22a3eb3e4e8ffac33c877c63d396 ""
   "traning_phases.pdf" 1741807939.27219 140627 dd113c1c99f3a7f85814f5574dacd159 ""
   (generated)
   "main.aux"
