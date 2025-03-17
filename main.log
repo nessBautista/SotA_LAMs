@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  16 MAR 2025 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  16 MAR 2025 22:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -429,57 +429,25 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 216--217
  []
 
 [3 <./lams_diagram.pdf, page is rotated 90 degrees>] [4] (./main.bbl [5]
-Underfull \hbox (badness 6625) in paragraph at lines 67--75
-[]\T1/ptm/m/n/8 D. Sil-ver, A. Huang, C. J. Mad-di-son, A. Guez, L. Sifre,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--75
-\T1/ptm/m/n/8 G. van den Driess-che, J. Schrit-twieser, I. Antonoglou,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--75
-\T1/ptm/m/n/8 V. Pan-neer-shel-vam, M. Lanc-tot, S. Diele-man, D. Grewe,
- []
-
-
-Underfull \hbox (badness 2865) in paragraph at lines 67--75
-\T1/ptm/m/n/8 K. Kavukcuoglu, T. Grae-pel, and D. Has-s-abis, ``Mas-ter-ing the
-
- []
-
-
-Underfull \hbox (badness 5985) in paragraph at lines 67--75
-\T1/ptm/m/n/8 vol. 529, no. 7587, pp. 484--489, 2016, [On-line]. Avail-able:
- []
-
-
-Overfull \hbox (280.45197pt too wide) in paragraph at lines 67--75
-\T1/ptm/m/n/8 https://github.com/tpn/pdfs/blob/master/Mastering%20the%20Game%20
-of%20Go%20with%20Deep%20Neural%20Networks%20and%20Tree%20Search.pdf.
- []
-
-
-Underfull \hbox (badness 2351) in paragraph at lines 86--91
+Underfull \hbox (badness 2351) in paragraph at lines 85--90
 \T1/ptm/m/it/8 arXiv preprint arXiv:1604.07316\T1/ptm/m/n/8 , Apr 2016, [On-lin
 e]. Avail-able:
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 93--98
+Underfull \hbox (badness 2096) in paragraph at lines 92--97
 []\T1/ptm/m/n/8 F. Lam-bert, ``Tesla full self-driving beta: An-a-lyz-ing neu-r
 al net-
  []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 93--98
+Underfull \hbox (badness 2277) in paragraph at lines 92--97
 \T1/ptm/m/n/8 work im-prove-ments for au-tonomous driv-ing,'' \T1/ptm/m/it/8 SS
 RN\T1/ptm/m/n/8 , Aug 2023,
  []
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 93--98
+Underfull \hbox (badness 2608) in paragraph at lines 92--97
 \T1/ptm/m/n/8 [On-line]. Avail-able: $https : / / papers . ssrn . com / sol3 / 
 papers . cfm ? abstract _
  []
@@ -509,7 +477,7 @@ ew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
 ></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 290831 bytes).
+Output written on main.pdf (6 pages, 289931 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
