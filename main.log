@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  17 MAR 2025 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.29)  17 MAR 2025 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -388,15 +388,9 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 105
 (/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/um
 sb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 1655) in paragraph at lines 114--115
-\T1/ptm/m/n/10 former ar-chi-tec-ture. This in-no-va-tion en-abled com-mer-cial
-
- []
-
-[1{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/up
-dmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts
-/enc/dvips/base/8r.enc}
+) [1{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/
+updmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fon
+ts/enc/dvips/base/8r.enc}
 
 
 ]
@@ -428,11 +422,8 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 222--223
  [][] 
  []
 
-[3 <./lams_diagram.pdf, page is rotated 90 degrees>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
-(./main.bbl) [5] (./main.aux)
+[3 <./lams_diagram.pdf, page is rotated 90 degrees>] [4] (./main.bbl) [5]
+(./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -441,7 +432,7 @@ L3 programming layer <2024-02-20>
 Here is how much of TeX's memory you used:
  6276 strings out of 474116
  94748 string characters out of 5732612
- 2033187 words of memory out of 5000000
+ 2032187 words of memory out of 5000000
  28570 multiletter control sequences out of 15000+600000
  647885 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -455,7 +446,7 @@ ew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
 ></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 288707 bytes).
+Output written on main.pdf (5 pages, 288771 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
