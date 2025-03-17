@@ -82,4 +82,11 @@ OpenAI, C.~Berner, G.~Brockman, B.~Chan, V.~Cheung, P.~D\k{e}biak, C.~Dennison,
   learning,'' \emph{arXiv preprint arXiv:1912.06680}, Dec 2019, [Online].
   Available: https://arxiv.org/abs/1912.06680. [Accessed: Mar. 14, 2025].
 
+\bibitem{bojarski2016end}
+M.~Bojarski, D.~Del~Testa, D.~Dworakowski, B.~Firner, B.~Flepp, P.~Goyal, L.~D.
+  Jackel, M.~Monfort, U.~Muller, J.~Zhang, X.~Zhang, J.~Zhao, and K.~Zieba,
+  ``End to end learning for self-driving cars,'' \emph{arXiv preprint
+  arXiv:1604.07316}, Apr 2016, [Online]. Available:
+  https://arxiv.org/abs/1604.07316. [Accessed: Mar. 14, 2025].
+
 \end{thebibliography}
